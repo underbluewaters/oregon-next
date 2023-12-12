@@ -15,8 +15,7 @@
     }
   ],
   "preprocessingFunctions": [
-    "src/functions/clipToLand.ts",
-    "src/functions/clipToOcean.ts"
+    "src/functions/clipToTerritorialSea.ts"
   ],
   "geoprocessingFunctions": [
     "src/functions/area.ts"

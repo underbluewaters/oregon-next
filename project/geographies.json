@@ -1,7 +1,16 @@
-[{
-  "geographyId": "world",
-  "datasourceId": "world",
-  "display": "World",
-  "groups": ["default-boundary"],
-  "precalc": true
-}]
+[
+  {
+    "geographyId": "territorial-sea",
+    "datasourceId": "territorial-sea",
+    "display": "Territorial Sea",
+    "precalc": true,
+    "groups": ["default-boundary"]
+  },
+  {
+    "geographyId": "world",
+    "datasourceId": "world",
+    "display": "World",
+    "groups": [],
+    "precalc": false
+  }
+]

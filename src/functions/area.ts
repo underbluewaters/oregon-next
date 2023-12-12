@@ -26,9 +26,11 @@ async function calculateArea(
   extraParams: DefaultExtraParams = {}
 ): Promise<AreaResults> {
   const geographyId = getFirstFromParam("geographyIds", extraParams);
+  console.log('geographyId', geographyId);
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
+  console.log('curGeography', curGeography);
   const clippedSketch = await clipToGeography(sketch, curGeography);
   return {
     area: turfArea(clippedSketch),
