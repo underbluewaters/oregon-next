@@ -1,10 +1,8 @@
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
 import { ResultsCard, Skeleton } from "@seasketch/geoprocessing/client-ui";
 // Import the results type definition from your functions to type-check your
 // component render functions
 import { AreaResults } from "../functions/area";
-import Translator from "../components/TranslatorAsync";
 
 const Number = new Intl.NumberFormat("en", { style: "decimal" });
 
@@ -12,35 +10,24 @@ const Number = new Intl.NumberFormat("en", { style: "decimal" });
  * SizeCard component
  */
 export const SizeCard = () => {
-  const { t } = useTranslation();
   return (
     <>
       <ResultsCard
-        title={t("SizeCard title", "Zone Size")}
+        title={"Size"}
         functionName="calculateArea"
+        skeleton={
+          <Skeleton style={{ width: "80%", margin: "1rem 0", height: "1.5rem" }} />
+        }
       >
         {(data: AreaResults) => (
           <p>
             📐
-            <Trans i18nKey="SizeCard sketch size message">
-              This sketch is{" "}
-              <b>{{ area: Number.format(Math.round(data.area * 1e-6)) }}</b>{" "}
-              square kilometers
-            </Trans>
+            This sketch has an area of{" "}
+            <b>{Number.format(Math.round(data.area * 0.000247105))}</b>{" "}
+            acres
           </p>
         )}
       </ResultsCard>
     </>
-  );
-};
-
-/**
- * SizeCard as a top-level report client
- */
-export const SizeCardReportClient = () => {
-  return (
-    <Translator>
-      <SizeCard />
-    </Translator>
   );
 };

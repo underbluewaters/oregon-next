@@ -75,7 +75,6 @@ export async function clipToGeography<G extends Polygon | MultiPolygon>(
   } else {
     const sketches = toSketchArray(sketch);
     sketches.forEach((sketch) => {
-      console.log("sketches.forEach clipMultiMerge", geogFeatures);
       const intersection = clipMultiMerge(
         sketch,
         featureCollection(geogFeatures),

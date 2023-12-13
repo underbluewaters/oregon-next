@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import { SegmentControl, ReportPage } from "@seasketch/geoprocessing/client-ui";
-import { ViabilityPage } from "../components/ViabilityPage";
-import Translator from "../components/TranslatorAsync";
+import { GeographyPage } from "../components/Geography";
 
-const enableAllTabs = false;
 const TabReport = () => {
-  const { t } = useTranslation();
-  const viabilityId = "viability";
-  const segments = [{ id: viabilityId, label: t("Viability") }];
-  const [tab, setTab] = useState<string>(viabilityId);
+  const tabs = ["Geography", "Physical", "Biological", "Human Use"];
+  const [tab, setTab] = useState<string>(tabs[0]);
 
   return (
     <>
@@ -17,11 +12,16 @@ const TabReport = () => {
         <SegmentControl
           value={tab}
           onClick={(segment) => setTab(segment)}
-          segments={segments}
+          segments={tabs.map((tab) => {
+            return {
+              id: tab,
+              label: tab,
+            };
+          }) as { id: string, label: string }[]}
         />
       </div>
-      <ReportPage hidden={!enableAllTabs && tab !== viabilityId}>
-        <ViabilityPage />
+      <ReportPage hidden={tab !== "Geography"}>
+        <GeographyPage />
       </ReportPage>
     </>
   );
@@ -30,8 +30,6 @@ const TabReport = () => {
 export default function () {
   // Translator must be in parent FunctionComponent to have access to useTranslate hook
   return (
-    <Translator>
-      <TabReport />
-    </Translator>
+    <TabReport />
   );
 }

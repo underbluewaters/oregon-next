@@ -6,17 +6,20 @@ import {
   GeoprocessingHandler,
   getFirstFromParam,
   DefaultExtraParams,
+  isSketchCollection,
 } from "@seasketch/geoprocessing";
 import bbox from "@turf/bbox";
 import { BBox } from "@turf/helpers";
 import turfArea from "@turf/area";
-import project from "../../project";
-import { clipToGeography } from "../util/clipToGeography";
+import { nearestCities } from "./cities";
+
+
 
 export interface AreaResults {
   /** area of the sketch in square meters */
   area: number;
   bbox: BBox;
+  cities?: string[];
 }
 
 async function calculateArea(
@@ -25,25 +28,19 @@ async function calculateArea(
     | SketchCollection<Polygon | MultiPolygon>,
   extraParams: DefaultExtraParams = {}
 ): Promise<AreaResults> {
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  console.log('geographyId', geographyId);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-  console.log('curGeography', curGeography);
-  const clippedSketch = await clipToGeography(sketch, curGeography);
   return {
-    area: turfArea(clippedSketch),
-    bbox: bbox(clippedSketch),
+    area: turfArea(sketch),
+    bbox: bbox(sketch),
+    cities: isSketchCollection(sketch) ? undefined : nearestCities(sketch),
   };
 }
 
 export default new GeoprocessingHandler(calculateArea, {
   title: "calculateArea",
   description: "Function description",
-  timeout: 2, // seconds
-  memory: 256, // megabytes
-  executionMode: "async",
+  timeout: 5, // seconds
+  memory: 1024, // megabytes
+  executionMode: "sync",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
 });
