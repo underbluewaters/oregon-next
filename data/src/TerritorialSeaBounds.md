@@ -76,3 +76,14 @@ own shape. Here's what I ended up doing:
      ]
      ```
 
+# osm-shoreline.geojson
+
+This shoreline dataset was derived from the new territorial sea explained above
+to have a matching shoreline. Process was as follows:
+
+  1. Make a copy of the territorial sea and convert it to a linestring
+  2. Convert the multi-linestring to singlepart, and copy the largest line. This
+     excludes the small islands.
+  3. Using QGIS's vector editing tools, manually delete offshore vertices.
+
+<img width="552" alt="Screenshot 2023-12-14 at 5 14 26 PM" src="https://github.com/underbluewaters/oregon-next/assets/511063/ea0de1b1-78c5-497a-a70b-bb0a092804a3">
