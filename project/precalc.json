@@ -9,10 +9,26 @@
   },
   {
     "geographyId": "territorial-sea",
+    "metricId": "area",
+    "classId": "offshore-rocks-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 532841.2342880894
+  },
+  {
+    "geographyId": "territorial-sea",
     "metricId": "count",
     "classId": "kelp-total",
     "sketchId": null,
     "groupId": null,
     "value": 0
+  },
+  {
+    "geographyId": "territorial-sea",
+    "metricId": "count",
+    "classId": "offshore-rocks-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4624
   }
 ]

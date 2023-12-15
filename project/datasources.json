@@ -128,5 +128,22 @@
     "src": "data/src/kelp.geojson",
     "propertiesToKeep": [],
     "explodeMulti": true
+  },
+  {
+    "src": "./data/src/PHY_OffshoreIslandsRocks_USFWS_2019.fgb",
+    "layerName": "PHY_OffshoreIslandsRocks_USFWS_2019",
+    "geo_type": "vector",
+    "datasourceId": "offshore-rocks",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [],
+    "created": "2023-12-15T21:07:01.966Z",
+    "lastUpdated": "2023-12-15T21:07:01.966Z",
+    "propertiesToKeep": [
+      "Shape_Area"
+    ],
+    "explodeMulti": false,
+    "precalc": true
   }
 ]
