@@ -59,7 +59,9 @@ export const GeographyPage = () => {
           }
         }}
       </ResultsCard>
-      <ResultsCard title="Shoreline" functionName="calculateArea" skeleton={<>Loading...</>}>
+      <ResultsCard title="Shoreline" functionName="calculateArea" skeleton={<><div style={{ marginTop: 14, paddingLeft: 0 }}>
+          <Skeleton style={{ width: "95%", display: "block" }} />
+        </div></>}>
         {(data: AreaResults) => {
             return (
               <p>
