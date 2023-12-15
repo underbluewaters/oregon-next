@@ -10,5 +10,8 @@
     "Seaside",
     "Gearhart",
     "Cannon Beach"
+  ],
+  "counties": [
+    "CLATSOP"
   ]
 }

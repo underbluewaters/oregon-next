@@ -10,5 +10,8 @@
     "Brookings",
     "Gold Beach",
     "Port Orford"
+  ],
+  "counties": [
+    "CURRY"
   ]
 }

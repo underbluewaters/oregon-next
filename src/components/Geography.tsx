@@ -31,6 +31,29 @@ export const GeographyPage = () => {
           }
         }}
       </ResultsCard>
+      <ResultsCard title="Adjacent Counties" functionName="calculateArea" skeleton={<>
+        <div style={{ marginTop: 15, paddingLeft: 30 }}>
+          <Skeleton style={{ width: "50%", display: "block" }} />
+          <Skeleton style={{ width: "40%", display: "block" }} />
+          <Skeleton style={{ width: "55%", display: "block" }} />
+        </div>
+      </>}>
+        {(data: AreaResults) => {
+          if (!data.counties) {
+            return <p>No nearby found</p>;
+          } else {
+            return (
+              <ul>
+                {data.counties.map((county) => (
+                  <li key={county}>
+                    {county}
+                  </li>
+                ))}
+              </ul>
+            );
+          }
+        }}
+      </ResultsCard>
     </>
   );
 };
