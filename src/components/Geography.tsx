@@ -3,6 +3,11 @@ import { SizeCard } from "./SizeCard";
 import { ResultsCard, Skeleton } from "@seasketch/geoprocessing/client-ui";
 import { AreaResults } from "../functions/area";
 
+const NumberFormat = new Intl.NumberFormat("en-US", {
+  style: "decimal",
+  maximumFractionDigits: 1,
+});
+
 export const GeographyPage = () => {
   return (
     <>
@@ -54,6 +59,15 @@ export const GeographyPage = () => {
           }
         }}
       </ResultsCard>
+      <ResultsCard title="Shoreline" functionName="calculateArea" skeleton={<>Loading...</>}>
+        {(data: AreaResults) => {
+            return (
+              <p>
+                The selected designated area touches { NumberFormat.format(data.shorelineLength)} miles of shoreline.
+              </p>
+            );
+        }}
+        </ResultsCard>
     </>
   );
 };

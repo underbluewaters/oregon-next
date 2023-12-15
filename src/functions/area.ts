@@ -13,6 +13,7 @@ import { BBox } from "@turf/helpers";
 import turfArea from "@turf/area";
 import { nearestCities } from "./cities";
 import { adjacentCounties } from "./counties";
+import { shorelineLength } from "./shoreline";
 
 
 
@@ -22,6 +23,7 @@ export interface AreaResults {
   bbox: BBox;
   cities?: string[];
   counties?: string[];
+  shorelineLength: number;
 }
 
 async function calculateArea(
@@ -35,6 +37,7 @@ async function calculateArea(
     bbox: bbox(sketch),
     cities: isSketchCollection(sketch) ? undefined : nearestCities(sketch),
     counties: isSketchCollection(sketch) ? undefined : adjacentCounties(sketch),
+    shorelineLength: isSketchCollection(sketch) ? 0 : shorelineLength(sketch),
   };
 }
 
