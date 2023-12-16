@@ -125,5 +125,50 @@
       "Shape_Area"
     ],
     "explodeMulti": true
+  },
+  {
+    "datasourceId": "intertidal-area-0-point-5",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "PHY_Intertidal_Area_05m_Sea_Level_Rise_EPA_2017_FIXED",
+    "classKeys": [],
+    "created": "2023-12-16T20:45:42.561Z",
+    "lastUpdated": "2023-12-16T20:45:42.561Z",
+    "src": "data/src/PHY_Intertidal_Area_05m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": false
+  },
+  {
+    "datasourceId": "intertidal-area-1",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "PHY_Intertidal_Area_1m_Sea_Level_Rise_EPA_2017_FIXED",
+    "classKeys": [],
+    "created": "2023-12-16T20:46:12.688Z",
+    "lastUpdated": "2023-12-16T20:46:12.688Z",
+    "src": "data/src/PHY_Intertidal_Area_1m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": false
+  },
+  {
+    "src": "data/src/PHY_Intertidal_Area_15m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
+    "layerName": "PHY_Intertidal_Area_15m_Sea_Level_Rise_EPA_2017_FIXED",
+    "geo_type": "vector",
+    "datasourceId": "intertidal-area-1-point-5",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [],
+    "created": "2023-12-16T20:46:38.879Z",
+    "lastUpdated": "2023-12-16T20:46:38.879Z",
+    "propertiesToKeep": [],
+    "explodeMulti": false,
+    "precalc": false
   }
 ]
