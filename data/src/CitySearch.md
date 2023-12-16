@@ -19,7 +19,8 @@ The general process of the algorithm will be as follows:
   1. Simplify the sketch in a way that preserves the general shape but reduces 
      the number of points
   2. For each point, run the flatbush neighbor search for the 3 closest cities,
-     tracking how often each city is found
+     tracking how often each city is found. This spatial index is already built
+     and stored in a compact format so this process is very efficient. 
   3. Rank cities by their number of occurances in the searches, and pick the 3
      closest ones.
   4. (Optional) If necessary perform an actual eucludian distance calculation 
