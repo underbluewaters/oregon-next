@@ -18,6 +18,7 @@
     "src/functions/clipToTerritorialSea.ts"
   ],
   "geoprocessingFunctions": [
-    "src/functions/area.ts"
+    "src/functions/area.ts",
+    "src/functions/rocksAndIslands.ts"
   ]
 }

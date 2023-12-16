@@ -45,26 +45,6 @@
     "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/global-eez-mr-v12.fgb"
   },
   {
-    "datasourceId": "world",
-    "geo_type": "vector",
-    "formats": [
-      "json",
-      "fgb"
-    ],
-    "precalc": false,
-    "metadata": {
-      "name": "World Outline Polygon",
-      "description": "World polygon for default project geography in seasketch geoprocessing proejcts",
-      "version": "1.0",
-      "publisher": "SeaSketch",
-      "publishDate": "20231018",
-      "publishLink": ""
-    },
-    "layerName": "world",
-    "classKeys": [],
-    "url": "https://gp-global-datasources-datasets.s3.us-west-1.amazonaws.com/world.fgb"
-  },
-  {
     "datasourceId": "territorial-sea",
     "geo_type": "vector",
     "formats": [
@@ -75,7 +55,7 @@
     "layerName": "OSM_CLIPPED_TERRITORIAL_SEA",
     "classKeys": [],
     "created": "2023-12-12T19:53:28.788Z",
-    "lastUpdated": "2023-12-12T21:49:00.611Z",
+    "lastUpdated": "2023-12-16T18:54:43.322Z",
     "src": "data/src/TerritorialSea.fgb",
     "propertiesToKeep": [],
     "explodeMulti": true
@@ -90,7 +70,7 @@
     "layerName": "PHY_Intertidal_Area_0m_Sea_Level_Rise_EPA_2017_Fixed",
     "classKeys": [],
     "created": "2023-12-12T20:12:23.564Z",
-    "lastUpdated": "2023-12-12T21:49:05.860Z",
+    "lastUpdated": "2023-12-16T18:54:48.219Z",
     "src": "data/src/PHY_Intertidal_Area_0m_Sea_Level_Rise_EPA_2017_Fixed.fgb",
     "propertiesToKeep": [],
     "explodeMulti": true
@@ -106,7 +86,7 @@
     "layerName": "BIO_Seabird_Colony_Relative_Ecological_Importance_USFWS_2017",
     "classKeys": [],
     "created": "2023-12-12T20:24:28.408Z",
-    "lastUpdated": "2023-12-12T21:49:09.498Z",
+    "lastUpdated": "2023-12-16T18:54:51.941Z",
     "src": "data/src/BIO_Seabird_Colony_Relative_Ecological_Importance_USFWS_2017.fgb",
     "propertiesToKeep": [
       "SPECIES",
@@ -124,26 +104,26 @@
     "layerName": "kelp",
     "classKeys": [],
     "created": "2023-12-12T20:31:24.688Z",
-    "lastUpdated": "2023-12-12T21:49:33.646Z",
+    "lastUpdated": "2023-12-16T18:55:15.739Z",
     "src": "data/src/kelp.geojson",
     "propertiesToKeep": [],
     "explodeMulti": true
   },
   {
-    "src": "./data/src/PHY_OffshoreIslandsRocks_USFWS_2019.fgb",
-    "layerName": "PHY_OffshoreIslandsRocks_USFWS_2019",
-    "geo_type": "vector",
     "datasourceId": "offshore-rocks",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "PHY_OffshoreIslandsRocks_USFWS_2019",
     "classKeys": [],
     "created": "2023-12-15T21:07:01.966Z",
-    "lastUpdated": "2023-12-15T21:07:01.966Z",
+    "lastUpdated": "2023-12-16T18:55:18.653Z",
+    "src": "./data/src/PHY_OffshoreIslandsRocks_USFWS_2019.fgb",
     "propertiesToKeep": [
       "Shape_Area"
     ],
-    "explodeMulti": false,
-    "precalc": true
+    "explodeMulti": true
   }
 ]
