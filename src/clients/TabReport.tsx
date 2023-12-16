@@ -5,7 +5,7 @@ import { PhysicalPage } from "../components/Physical";
 
 const TabReport = () => {
   const tabs = ["Geography", "Physical", "Biological", "Human Use"];
-  const [tab, setTab] = useState<string>(tabs[0]);
+  const [tab, setTab] = useState<string>(tabs[1]);
 
   return (
     <>
