@@ -13,7 +13,6 @@ for (const p of cities.features) {
 
 index.finish();
 
-const decoder =new TextDecoder("utf-8");
 console.log('index data', index.data);
 
 console.log('arrayified data', Array.from(new Uint8Array(index.data)))

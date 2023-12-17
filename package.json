@@ -60,10 +60,14 @@
     "@turf/line-split": "^6.5.0",
     "@turf/polygon-to-line": "^6.5.0",
     "@turf/simplify": "^6.5.0",
+    "@types/yargs": "^17.0.32",
+    "execa": "^8.0.1",
     "flatbush": "^3.3.1",
     "i18next-browser-languagedetector": "^7.0.1",
+    "inquirer": "^8.2.6",
     "react-i18next": "^12.2.0",
-    "union-subdivided-polygons": "^0.9.1"
+    "union-subdivided-polygons": "^0.9.1",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",

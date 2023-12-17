@@ -19,6 +19,7 @@
   ],
   "geoprocessingFunctions": [
     "src/functions/area.ts",
-    "src/functions/rocksAndIslands.ts"
+    "src/functions/rocksAndIslands.ts",
+    "src/functions/intertidalArea.ts"
   ]
 }
