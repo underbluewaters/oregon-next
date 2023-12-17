@@ -20,6 +20,7 @@
   "geoprocessingFunctions": [
     "src/functions/area.ts",
     "src/functions/rocksAndIslands.ts",
-    "src/functions/intertidalArea.ts"
+    "src/functions/intertidalArea.ts",
+    "src/functions/bathymetry.ts"
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "subtidal": [
+    {
+      "habitat": "sand",
+      "area": 101356722.472699,
+      "fraction": 0.9146243680137917
+    },
+    {
+      "habitat": "rock",
+      "area": 2576296.391415,
+      "fraction": 0.02324802342981099
+    },
+    {
+      "habitat": "shell",
+      "area": 90695.187507,
+      "fraction": 0.0008184166430384111
+    },
+    {
+      "habitat": "muddy sand",
+      "area": 6376197.583256,
+      "fraction": 0.057537630880748133
+    },
+    {
+      "habitat": "gravel mix",
+      "area": 246652.031159,
+      "fraction": 0.0022257424334028108
+    },
+    {
+      "habitat": "gravel",
+      "area": 5585.003274,
+      "fraction": 0.000050398039372406933
+    }
+  ],
+  "intertidal": [
+    {
+      "habitat": "Unclassified",
+      "area": 4814112.267183,
+      "fraction": 0.04344166112026456
+    },
+    {
+      "habitat": "Coarse Unconsolidated Substrate",
+      "area": 25910.331364,
+      "fraction": 0.00023381005098314692
+    },
+    {
+      "habitat": "Fine Unconsolidated Substrate",
+      "area": 1885953.659423,
+      "fraction": 0.01701849795229597
+    },
+    {
+      "habitat": "Very Coarse Woody Debris",
+      "area": 0,
+      "fraction": 0
+    },
+    {
+      "habitat": "Rock Substrate",
+      "area": 176340.310219,
+      "fraction": 0.0015912624328677548
+    },
+    {
+      "habitat": "Boulder",
+      "area": 99304.571234,
+      "fraction": 0.0008961061337617976
+    }
+  ]
+}

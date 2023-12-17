@@ -136,10 +136,10 @@
     "layerName": "PHY_Intertidal_Area_05m_Sea_Level_Rise_EPA_2017_FIXED",
     "classKeys": [],
     "created": "2023-12-16T20:45:42.561Z",
-    "lastUpdated": "2023-12-16T20:45:42.561Z",
+    "lastUpdated": "2023-12-17T18:45:35.924Z",
     "src": "data/src/PHY_Intertidal_Area_05m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": false
+    "explodeMulti": true
   },
   {
     "datasourceId": "intertidal-area-1",
@@ -151,24 +151,76 @@
     "layerName": "PHY_Intertidal_Area_1m_Sea_Level_Rise_EPA_2017_FIXED",
     "classKeys": [],
     "created": "2023-12-16T20:46:12.688Z",
-    "lastUpdated": "2023-12-16T20:46:12.688Z",
+    "lastUpdated": "2023-12-17T18:45:37.884Z",
     "src": "data/src/PHY_Intertidal_Area_1m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": false
+    "explodeMulti": true
   },
   {
-    "src": "data/src/PHY_Intertidal_Area_15m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
-    "layerName": "PHY_Intertidal_Area_15m_Sea_Level_Rise_EPA_2017_FIXED",
-    "geo_type": "vector",
     "datasourceId": "intertidal-area-1-point-5",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "PHY_Intertidal_Area_15m_Sea_Level_Rise_EPA_2017_FIXED",
     "classKeys": [],
     "created": "2023-12-16T20:46:38.879Z",
-    "lastUpdated": "2023-12-16T20:46:38.879Z",
+    "lastUpdated": "2023-12-17T18:45:40.412Z",
+    "src": "data/src/PHY_Intertidal_Area_15m_Sea_Level_Rise_EPA_2017_FIXED.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": false,
-    "precalc": false
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "bathy",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": false,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 3.4e+38,
+    "created": "2023-12-17T19:13:30.470Z",
+    "lastUpdated": "2023-12-17T19:13:30.470Z",
+    "src": "data/src/bathy.tif"
+  },
+  {
+    "datasourceId": "habitats",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "phy_hab_clipped_FIXED",
+    "classKeys": [
+      "V4_Lith1"
+    ],
+    "created": "2023-12-17T21:08:33.863Z",
+    "lastUpdated": "2023-12-17T21:09:39.624Z",
+    "src": "data/src/phy_hab_clipped_FIXED.fgb",
+    "propertiesToKeep": [
+      "V4_Lith1"
+    ],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "intertidal-habitats",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "Substrate_Component_Intertidal_DRAFT_20200630_FIXED",
+    "classKeys": [
+      "Class_name"
+    ],
+    "created": "2023-12-17T21:12:15.641Z",
+    "lastUpdated": "2023-12-17T21:12:53.617Z",
+    "src": "data/src/Substrate_Component_Intertidal_DRAFT_20200630_FIXED.fgb",
+    "propertiesToKeep": [
+      "Class_name"
+    ],
+    "explodeMulti": true
   }
 ]
