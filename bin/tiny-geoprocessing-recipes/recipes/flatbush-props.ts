@@ -1,6 +1,10 @@
 export default function toFlatbushIndexModule(featureData: Record<string, any>[], boundingBoxes: [number, number, number, number][], layerName: string, interfaceString: string) {
   return `
 import Flatbush from 'flatbush';
+import booleanIntersects from "@turf/boolean-intersects";
+import bboxPolygon from "@turf/bbox-polygon";
+import createBBox from "@turf/bbox";
+import { Feature, MultiPolygon, Polygon } from '@seasketch/geoprocessing';
 
 ${interfaceString}
 
@@ -24,7 +28,7 @@ index.finish();
  * @param minY 
  * @param maxX 
  * @param maxY 
- * @returns 
+* @returns ${layerName}[]
  */
 function search(minX: number, minY: number, maxX: number, maxY: number): ${layerName}[] {
   const ids = index.search(minX, minY, maxX, maxY);
@@ -37,16 +41,32 @@ function search(minX: number, minY: number, maxX: number, maxY: number): ${layer
  * @param y Latitude
  * @param maxResults 
  * @param maxDistance 
- * @returns 
+* @returns ${layerName}[]
  */
 function neighbors(x: number,y: number, maxResults?: number, maxDistance?: number): ${layerName}[] {
   const neighbors = index.neighbors(x, y, maxResults, maxDistance);
   return neighbors.map(id => featureData[id]);
 }
 
+/**
+ * Perform an intersection search
+ * @param feature
+ * @returns ${layerName}[]
+ */ 
+function intersects(feature: Feature<Polygon | MultiPolygon>): ${layerName}[] {
+  const bbox = (feature.bbox || createBBox(feature)) as [number, number, number, number];
+  let ids = index.search(...bbox);
+  ids.filter((id) => {
+    const candidate = bboxPolygon(boundingBoxes[id]);
+    return booleanIntersects(feature, candidate);
+  });
+  return ids.map(id => featureData[id]);
+}
+
 export default {
   search,
-  neighbors
+  neighbors,
+  intersects
 };
 `;
 }

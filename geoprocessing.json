@@ -21,6 +21,9 @@
     "src/functions/area.ts",
     "src/functions/rocksAndIslands.ts",
     "src/functions/intertidalArea.ts",
-    "src/functions/bathymetry.ts"
+    "src/functions/bathymetry.ts",
+    "src/functions/habitats.ts",
+    "src/functions/marineMammals.ts",
+    "src/functions/species.ts"
   ]
 }

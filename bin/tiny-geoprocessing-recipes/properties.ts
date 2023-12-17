@@ -26,7 +26,7 @@ export async function fetchDistinctValues(inputFile: string, layerName: string, 
     .filter(line => line.includes('='))
     .map(line => {
       const parts = line.split('=');
-      return parts.length === 2 ? parts[1].trim() : null;
+      return parts.length === 2 ? parts[1].trim().replace("'", "\\'") : null;
     })
     .filter(value => value !== null) as any[];
 
