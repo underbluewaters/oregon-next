@@ -40,7 +40,7 @@ export async function clipToOcean(
 export default new PreprocessingHandler(clipToOcean, {
   title: "clipToOregonTerritorialSea",
   description: "Clips feature the Oregon Territorial Sea, removing land",
-  timeout: 40,
+  timeout: 60,
   requiresProperties: [],
   memory: 4096,
 });

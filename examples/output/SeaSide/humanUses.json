@@ -12,5 +12,105 @@
       "name": "Port of Garibaldi",
       "distance": 37359.641043000425
     }
+  ],
+  "stateParks": [
+    {
+      "name": "Elmer Feldenheimer",
+      "distance": 0
+    },
+    {
+      "name": "Ecola",
+      "distance": 0
+    },
+    {
+      "name": "Gearhart Ocean",
+      "distance": 366.99834149293963
+    }
+  ],
+  "outfalls": 9,
+  "overlapsResearch": true,
+  "parkAttendance": [
+    {
+      "NAME": "Elmer Feldenheimer",
+      "Y2016": null,
+      "Y2017": null,
+      "Y2018": null,
+      "Trend": "(null)",
+      "BIN": "(null)"
+    },
+    {
+      "NAME": "Ecola",
+      "Y2016": 339056,
+      "Y2017": 375472,
+      "Y2018": 355604,
+      "Trend": "Increasing",
+      "BIN": "200,000-500,000"
+    },
+    {
+      "NAME": "Gearhart Ocean",
+      "Y2016": null,
+      "Y2017": null,
+      "Y2018": null,
+      "Trend": "(null)",
+      "BIN": "(null)"
+    }
+  ],
+  "recreation": [
+    {
+      "activity": "Beach going (dog walking, kite flying, jogging, etc.)",
+      "occurances": 145
+    },
+    {
+      "activity": "Biking or Hiking",
+      "occurances": 18
+    },
+    {
+      "activity": "Scenic enjoyment",
+      "occurances": 85
+    },
+    {
+      "activity": "Photography",
+      "occurances": 199
+    },
+    {
+      "activity": "Tide pooling",
+      "occurances": 117
+    },
+    {
+      "activity": "Watching birds and/or other marine life from shore",
+      "occurances": 43
+    },
+    {
+      "activity": "Storm Watching",
+      "occurances": 16
+    },
+    {
+      "activity": "Surfing (board, boogie, stand up paddle)",
+      "occurances": 7
+    },
+    {
+      "activity": "Swimming or body surfing in the ocean",
+      "occurances": 20
+    },
+    {
+      "activity": "Free diving/snorkeling (from shore, from boat)",
+      "occurances": 1
+    },
+    {
+      "activity": "Skim boarding",
+      "occurances": 5
+    },
+    {
+      "activity": "Watching whales and/or other marine life from a boat (private or non-commercial boat, charter)",
+      "occurances": 4
+    },
+    {
+      "activity": "Sail boating",
+      "occurances": 1
+    },
+    {
+      "activity": "Using a personal water craft (PWC)",
+      "occurances": 1
+    }
   ]
 }

@@ -264,5 +264,80 @@
       "sciname"
     ],
     "explodeMulti": true
+  },
+  {
+    "datasourceId": "research-lines",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "HUM_Nearshore_Research_Inventory_Lines_OCMP_2012",
+    "classKeys": [],
+    "created": "2023-12-18T21:50:00.816Z",
+    "lastUpdated": "2023-12-18T21:53:50.482Z",
+    "src": "data/src/HUM_Nearshore_Research_Inventory_Lines_OCMP_2012.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "research-points",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "HUM_Nearshore_Research_Inventory_Points_OCMP_2012",
+    "classKeys": [],
+    "created": "2023-12-18T21:50:24.962Z",
+    "lastUpdated": "2023-12-18T21:53:51.726Z",
+    "src": "data/src/HUM_Nearshore_Research_Inventory_Points_OCMP_2012.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "research-poly",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "HUM_Nearshore_Research_Inventory_Poly_OCMP_2012",
+    "classKeys": [],
+    "created": "2023-12-18T21:50:45.263Z",
+    "lastUpdated": "2023-12-18T21:53:53.138Z",
+    "src": "data/src/HUM_Nearshore_Research_Inventory_Poly_OCMP_2012.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "research-stations",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "HUM_Nearshore_Research_Inventory_Stations_OCMP_2012",
+    "classKeys": [],
+    "created": "2023-12-18T21:51:16.058Z",
+    "lastUpdated": "2023-12-18T21:53:55.014Z",
+    "src": "data/src/HUM_Nearshore_Research_Inventory_Stations_OCMP_2012.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "research-transects",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "HUM_Nearshore_Research_Inventory_Transects_OCMP_2012",
+    "classKeys": [],
+    "created": "2023-12-18T21:53:03.191Z",
+    "lastUpdated": "2023-12-18T21:53:56.694Z",
+    "src": "data/src/HUM_Nearshore_Research_Inventory_Transects_OCMP_2012.fgb",
+    "propertiesToKeep": [],
+    "explodeMulti": true
   }
 ]

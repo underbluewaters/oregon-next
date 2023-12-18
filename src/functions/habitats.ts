@@ -58,7 +58,7 @@ export default new GeoprocessingHandler(habitats, {
   title: "habitats",
   description: "Calculates the area of overlapping intertidal and subtidal habitats.",
   timeout: 60, // seconds
-  memory: 1024, // megabytes
+  memory: 2048, // megabytes
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

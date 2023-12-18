@@ -44,7 +44,7 @@ async function calculateArea(
 export default new GeoprocessingHandler(calculateArea, {
   title: "calculateArea",
   description: "Function description",
-  timeout: 5, // seconds
+  timeout: 30, // seconds
   memory: 1024, // megabytes
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required

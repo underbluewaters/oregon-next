@@ -47,8 +47,8 @@ export async function criticalHabitats(sketch: Sketch<Polygon | MultiPolygon> | 
 export default new GeoprocessingHandler(criticalHabitats, {
   title: "criticalHabitats",
   description: "Lists species with critical habitats within the given sketches.",
-  timeout: 10, // seconds
-  memory: 512, // megabytes
+  timeout: 60, // seconds
+  memory: 1024, // megabytes
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

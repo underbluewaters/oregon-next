@@ -33,7 +33,7 @@ export async function kelp(sketch: Sketch<Polygon | MultiPolygon> | SketchCollec
 export default new GeoprocessingHandler(kelp, {
   title: "kelp",
   description: "Calculates overlap with observed kelp",
-  timeout: 30, // seconds
+  timeout: 60, // seconds
   memory: 2048, // megabytes
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required

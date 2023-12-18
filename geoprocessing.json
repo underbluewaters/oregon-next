@@ -4,14 +4,9 @@
   "region": "us-west-2",
   "clients": [
     {
-      "name": "TabReport",
-      "description": "Report suite with tab navigation",
+      "name": "Oregon Ocean Planning",
+      "description": "Report that can be used with any zone or collection type",
       "source": "src/clients/TabReport.tsx"
-    },
-    {
-      "name": "SizeReport",
-      "description": "Sketch size",
-      "source": "src/clients/SizeReport.tsx"
     }
   ],
   "preprocessingFunctions": [

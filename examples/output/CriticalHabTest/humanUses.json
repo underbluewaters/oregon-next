@@ -2,7 +2,7 @@
   "ports": [
     {
       "name": "Port of Port Orford",
-      "distance": 1356.2632348742668
+      "distance": 153.4706554918767
     },
     {
       "name": "Port of Gold Beach",
@@ -11,6 +11,86 @@
     {
       "name": "Port of Bandon",
       "distance": 30713.52566461929
+    }
+  ],
+  "stateParks": [
+    {
+      "name": "Cape Blanco",
+      "distance": 0
+    },
+    {
+      "name": "Port Orford Heads",
+      "distance": 0
+    },
+    {
+      "name": "Floras Lake",
+      "distance": 0
+    }
+  ],
+  "outfalls": 4,
+  "overlapsResearch": true,
+  "parkAttendance": [
+    {
+      "NAME": "Cape Blanco",
+      "Y2016": 580546,
+      "Y2017": 579336,
+      "Y2018": 614502,
+      "Trend": "Decreasing",
+      "BIN": "500,000-1 million"
+    },
+    {
+      "NAME": "Port Orford Heads",
+      "Y2016": 133748,
+      "Y2017": 111638,
+      "Y2018": 105600,
+      "Trend": "Decreasing",
+      "BIN": "10,000-200,00"
+    },
+    {
+      "NAME": "Floras Lake",
+      "Y2016": null,
+      "Y2017": null,
+      "Y2018": null,
+      "Trend": "(null)",
+      "BIN": "(null)"
+    }
+  ],
+  "recreation": [
+    {
+      "activity": "Scenic enjoyment",
+      "occurances": 8
+    },
+    {
+      "activity": "Beach going (dog walking, kite flying, jogging, etc.)",
+      "occurances": 15
+    },
+    {
+      "activity": "Photography",
+      "occurances": 6
+    },
+    {
+      "activity": "Watching birds and/or other marine life from shore",
+      "occurances": 6
+    },
+    {
+      "activity": "Storm Watching",
+      "occurances": 3
+    },
+    {
+      "activity": "Tide pooling",
+      "occurances": 5
+    },
+    {
+      "activity": "Surfing (board, boogie, stand up paddle)",
+      "occurances": 2
+    },
+    {
+      "activity": "Biking or Hiking",
+      "occurances": 1
+    },
+    {
+      "activity": "Skim boarding",
+      "occurances": 1
     }
   ]
 }

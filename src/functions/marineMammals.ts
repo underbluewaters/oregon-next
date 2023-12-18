@@ -45,7 +45,7 @@ async function marineMammals(
 export default new GeoprocessingHandler(marineMammals, {
   title: "marineMammals",
   description: "Counts of marine mammal haulouts within a sketch.",
-  timeout: 5, // seconds
+  timeout: 30, // seconds
   memory: 1024, // megabytes
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required

@@ -85,8 +85,8 @@ async function species(
 export default new GeoprocessingHandler(species, {
   title: "species",
   description: "Lists key species found within a sketch.",
-  timeout: 5, // seconds
-  memory: 512, // megabytes
+  timeout: 30, // seconds
+  memory: 1024, // megabytes
   executionMode: "sync",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

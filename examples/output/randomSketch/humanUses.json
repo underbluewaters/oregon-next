@@ -12,5 +12,89 @@
       "name": "Port of Port Orford",
       "distance": 48950.29637412488
     }
+  ],
+  "stateParks": [
+    {
+      "name": "Pistol River",
+      "distance": 4802.144231162774
+    },
+    {
+      "name": "Samuel H. Boardman",
+      "distance": 0
+    },
+    {
+      "name": "Alfred A. Loeb",
+      "distance": 4743.453091425696
+    }
+  ],
+  "outfalls": 22,
+  "overlapsResearch": true,
+  "parkAttendance": [
+    {
+      "NAME": "Pistol River",
+      "Y2016": 98318,
+      "Y2017": 103210,
+      "Y2018": 120326,
+      "Trend": "Increasing",
+      "BIN": "10,000-200,00"
+    },
+    {
+      "NAME": "Samuel H. Boardman",
+      "Y2016": 79256,
+      "Y2017": 88898,
+      "Y2018": 83002,
+      "Trend": "Decreasing",
+      "BIN": "10,000-200,00"
+    },
+    {
+      "NAME": "Alfred A. Loeb",
+      "Y2016": 1605374,
+      "Y2017": 1691972,
+      "Y2018": 1649094,
+      "Trend": "Increasing",
+      "BIN": ">1.5 million"
+    }
+  ],
+  "recreation": [
+    {
+      "activity": "Biking or Hiking",
+      "occurances": 7
+    },
+    {
+      "activity": "Scenic enjoyment",
+      "occurances": 40
+    },
+    {
+      "activity": "Beach going (dog walking, kite flying, jogging, etc.)",
+      "occurances": 47
+    },
+    {
+      "activity": "Watching birds and/or other marine life from shore",
+      "occurances": 10
+    },
+    {
+      "activity": "Photography",
+      "occurances": 82
+    },
+    {
+      "activity": "Tide pooling",
+      "occurances": 21
+    },
+    {
+      "activity": "Swimming or body surfing in the ocean",
+      "occurances": 3
+    },
+    {
+      "activity": "Storm Watching",
+      "occurances": 13
+    },
+    {
+      "activity": "Surfing (board, boogie, stand up paddle)",
+      "occurances": 1
+    },
+    {
+      "activity": "Watching whales and/or other marine life from a boat (private or non-commercial boat, charter)",
+      "occurances": 3
+    }
   ]
 }
