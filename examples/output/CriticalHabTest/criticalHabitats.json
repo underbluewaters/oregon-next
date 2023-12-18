@@ -1,0 +1,13 @@
+{
+  "habitats": [
+    {
+      "commonName": "Western snowy plover",
+      "scientificName": "Charadrius nivosus nivosus"
+    },
+    {
+      "commonName": "Steller sea lion",
+      "scientificName": "Eumetopias jubatus"
+    }
+  ],
+  "inGrayWhaleMigrationCooridor": true
+}

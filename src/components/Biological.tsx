@@ -2,10 +2,17 @@ import React from "react";
 import { ResultsCard, Skeleton } from "@seasketch/geoprocessing/client-ui";
 import { MarineMammalResults } from "../functions/marineMammals";
 import { SpeciesResults } from "../functions/species";
+import { CriticalHabitatsResults } from "../functions/criticalHabitats";
+import { KelpResults } from "../functions/kelp";
 
 const NumberFormat = new Intl.NumberFormat("en-US", {
   style: "decimal",
   maximumFractionDigits: 1,
+});
+
+const PercentFormatter = new Intl.NumberFormat("en-US", {
+  style: "percent",
+  maximumFractionDigits: 2,
 });
 
 export const BiologicalPage = () => {
@@ -154,6 +161,49 @@ export const BiologicalPage = () => {
           </>
         }}
       </ResultsCard>
+      <ResultsCard title="Critical Habitats" functionName="criticalHabitats">
+        {(data: CriticalHabitatsResults) => {
+          return <>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Species</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.habitats.length === 0 && <tr><td colSpan={2}>None</td></tr>}
+                {data.habitats.length > 0 && data.habitats.sort((a, b) => a.commonName.localeCompare(b.commonName)).map((row) => (
+                  <tr key={row.commonName}>
+                    <td>{row.commonName}</td>
+                    <td>{row.scientificName}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </>
+        }}
+      </ResultsCard>
+      <ResultsCard title="Kelp" functionName="kelp">
+        {(data: KelpResults) => {
+          if (data.area > 0) {
+            return <p>The selected designated area overlaps with <b>{NumberFormat.format(
+              data.area * 0.000247105
+            )}</b> acres of observed kelp, which represents <b>{PercentFormatter.format(data.fraction)}</b> of the total observed kelp in Oregon territorial waters.</p>
+          } else {
+            return <p>The selected designated area <b>does not</b> overlap with any observed kelp areas.</p>
+          }
+        }}
+      </ResultsCard>
+      <ResultsCard title="Overlap with Gray Whale Migration Pathways" functionName="criticalHabitats">
+        {(data: CriticalHabitatsResults) => {
+          if (data.inGrayWhaleMigrationCooridor) {
+            return <p>The selected designated area overlaps with Gray Whale migration pathways.</p>
+          } else {
+            return <p>No overlap with Gray Whale migration pathways.</p>
+          }
+        }}
+        </ResultsCard>
     </>
   );
 };

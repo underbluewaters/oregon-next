@@ -8,6 +8,12 @@
       "Risk15": "High"
     },
     {
+      "CELLNAME": "Indian Beach",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
       "CELLNAME": "Neahkahnie Haystack Rock",
       "Risk05": "None",
       "Risk10": "None",
@@ -18,12 +24,6 @@
       "Risk05": "Low",
       "Risk10": "Low",
       "Risk15": "None"
-    },
-    {
-      "CELLNAME": "Indian Beach",
-      "Risk05": "Low",
-      "Risk10": "Low",
-      "Risk15": "Moderate"
     }
   ],
   "seaLevelRiseRemainingIntertidalHabitat": {

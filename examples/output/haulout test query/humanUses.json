@@ -1,0 +1,16 @@
+{
+  "ports": [
+    {
+      "name": "Oregon International Port of Coos Bay",
+      "distance": 15629.098015161393
+    },
+    {
+      "name": "Port of Bandon",
+      "distance": 17023.81943828906
+    },
+    {
+      "name": "Port of Umpqua",
+      "distance": 49238.70747992223
+    }
+  ]
+}

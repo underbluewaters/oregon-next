@@ -1,0 +1,51 @@
+{
+  "subtidal": [
+    {
+      "habitat": "sand",
+      "area": 4425924.861355,
+      "fraction": 0.653962826620324
+    },
+    {
+      "habitat": "rock",
+      "area": 2229332.825215,
+      "fraction": 0.3294002590474925
+    },
+    {
+      "habitat": "rock mix",
+      "area": 0,
+      "fraction": 0
+    }
+  ],
+  "intertidal": [
+    {
+      "habitat": "Unclassified",
+      "area": 1125353.169425,
+      "fraction": 0.16627917614444207
+    },
+    {
+      "habitat": "Coarse Unconsolidated Substrate",
+      "area": 2536.572643,
+      "fraction": 0.00037479719324385815
+    },
+    {
+      "habitat": "Fine Unconsolidated Substrate",
+      "area": 75794.816766,
+      "fraction": 0.011199239519011608
+    },
+    {
+      "habitat": "Rock Substrate",
+      "area": 374631.542365,
+      "fraction": 0.05535455527619184
+    },
+    {
+      "habitat": "Boulder",
+      "area": 7185.233337,
+      "fraction": 0.0010616708711029808
+    },
+    {
+      "habitat": "Very Coarse Woody Debris",
+      "area": 0,
+      "fraction": 0
+    }
+  ]
+}

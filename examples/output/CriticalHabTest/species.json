@@ -1,0 +1,23 @@
+{
+  "keySpecies": [],
+  "researchSpecies": [],
+  "birdColoniesByImportance": {
+    "HIGH": 8,
+    "MEDIUM": 27,
+    "LOW": 7
+  },
+  "birdSpecies": [
+    "Double-crested Cormorant",
+    "Brandt's Cormorant",
+    "Pigeon Guillemot",
+    "Black Oystercatcher",
+    "West./Glaucous-winged Gull",
+    "Pelagic Cormorant",
+    "Unidentified Cormorant",
+    "Common Murre",
+    "Tufted Puffin",
+    "Cassin's Auklet",
+    "Rhinoceros Auklet",
+    "Seabirds"
+  ]
+}

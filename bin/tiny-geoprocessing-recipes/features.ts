@@ -2,8 +2,7 @@ import { execa } from 'execa';
 
 function parseWKT(wkt: string): number[] {
   // Remove "POLYGON((" and "))" and split by commas to get individual coordinates
-  const coordinates = wkt.substring(10, wkt.length - 2).split(',');
-
+  const coordinates = wkt.substring(9, wkt.length - 2).split(',');
   // Extract x and y coordinates and convert them to numbers
   const points = coordinates.map(coord => {
     const [x, y] = coord.trim().split(' ').map(Number);

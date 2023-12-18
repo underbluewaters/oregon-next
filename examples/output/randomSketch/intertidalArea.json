@@ -8,40 +8,16 @@
       "Risk15": "None"
     },
     {
-      "CELLNAME": "Chetco Point",
-      "Risk05": "Low",
-      "Risk10": "Moderate",
-      "Risk15": "High"
-    },
-    {
-      "CELLNAME": "Harris Beach",
-      "Risk05": "None",
-      "Risk10": "Low",
-      "Risk15": "None"
-    },
-    {
-      "CELLNAME": "South Boardman Beach",
-      "Risk05": "None",
-      "Risk10": "Low",
-      "Risk15": "Moderate"
-    },
-    {
-      "CELLNAME": "South Boardman Rocks - Rainbow",
-      "Risk05": "Moderate",
-      "Risk10": "Moderate",
-      "Risk15": "Moderate"
-    },
-    {
-      "CELLNAME": "Whaleshead Rocks",
-      "Risk05": "None",
-      "Risk10": "None",
-      "Risk15": "None"
-    },
-    {
       "CELLNAME": "Cape Ferrelo",
       "Risk05": "None",
       "Risk10": "Low",
       "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Thomas Creek",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
     },
     {
       "CELLNAME": "Indian Sands",
@@ -50,10 +26,34 @@
       "Risk15": "None"
     },
     {
-      "CELLNAME": "Thomas Creek",
+      "CELLNAME": "Whaleshead Rocks",
       "Risk05": "None",
       "Risk10": "None",
       "Risk15": "None"
+    },
+    {
+      "CELLNAME": "South Boardman Rocks - Rainbow",
+      "Risk05": "Moderate",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "South Boardman Beach",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Harris Beach",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Chetco Point",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
     },
     {
       "CELLNAME": "Mid Boardman",
@@ -74,12 +74,6 @@
       "Risk15": "None"
     },
     {
-      "CELLNAME": "Crook Point",
-      "Risk05": "None",
-      "Risk10": "None",
-      "Risk15": "None"
-    },
-    {
       "CELLNAME": "Meyers Creek Rocks",
       "Risk05": "None",
       "Risk10": "Low",
@@ -87,6 +81,12 @@
     },
     {
       "CELLNAME": "Cape Sebastian",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Crook Point",
       "Risk05": "None",
       "Risk10": "None",
       "Risk15": "None"

@@ -182,20 +182,20 @@
     "LOW": 18
   },
   "birdSpecies": [
-    "West./Glaucous-winged Gull",
     "Pelagic Cormorant",
-    "Black Oystercatcher",
-    "Pigeon Guillemot",
     "Leach's Storm-Petrel",
-    "Common Murre",
-    "Brandt's Cormorant",
-    "Unidentified Cormorant",
-    "Tufted Puffin",
+    "Pigeon Guillemot",
+    "West./Glaucous-winged Gull",
+    "Black Oystercatcher",
     "Rhinoceros Auklet",
-    "Cassin's Auklet",
     "Fork-tailed Storm-Petrel",
     "Double-crested Cormorant",
-    "Seabirds",
-    "Horned Puffin"
+    "Brandt's Cormorant",
+    "Tufted Puffin",
+    "Horned Puffin",
+    "Cassin's Auklet",
+    "Unidentified Cormorant",
+    "Common Murre",
+    "Seabirds"
   ]
 }

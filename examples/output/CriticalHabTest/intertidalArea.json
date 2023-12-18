@@ -1,0 +1,52 @@
+{
+  "area": 545851.033335,
+  "seaLevelRiseRisk": [
+    {
+      "CELLNAME": "Cape Blanco",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Castle and Gull Rocks",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Blacklock Point / Tower Rock",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "The Heads",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Nellie's & Tichenor Cove",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Battle Rock",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Rocky & Coal Points",
+      "Risk05": "Moderate",
+      "Risk10": "High",
+      "Risk15": "High"
+    }
+  ],
+  "seaLevelRiseRemainingIntertidalHabitat": {
+    "0.5 Meters": 395963.272715,
+    "1 Meter": 315962.103392,
+    "1.5 Meters": 220342.090883
+  }
+}

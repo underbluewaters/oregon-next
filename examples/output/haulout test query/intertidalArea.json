@@ -1,0 +1,34 @@
+{
+  "area": 280511.191515,
+  "seaLevelRiseRisk": [
+    {
+      "CELLNAME": "Shore Acres Park",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "South Cove Cape Arago",
+      "Risk05": "Moderate",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "North Cove Cape Arago",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Middle Cove Cape Arago",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    }
+  ],
+  "seaLevelRiseRemainingIntertidalHabitat": {
+    "0.5 Meters": 160741.574025,
+    "1 Meter": 89828.019915,
+    "1.5 Meters": 47494.255936
+  }
+}

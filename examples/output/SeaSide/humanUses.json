@@ -1,0 +1,16 @@
+{
+  "ports": [
+    {
+      "name": "Port of Astoria",
+      "distance": 20646.211075334533
+    },
+    {
+      "name": "Port of Nehalem",
+      "distance": 19591.643545915314
+    },
+    {
+      "name": "Port of Garibaldi",
+      "distance": 37359.641043000425
+    }
+  ]
+}

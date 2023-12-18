@@ -3,10 +3,11 @@ import { SegmentControl, ReportPage } from "@seasketch/geoprocessing/client-ui";
 import { GeographyPage } from "../components/Geography";
 import { PhysicalPage } from "../components/Physical";
 import { BiologicalPage } from "../components/Biological";
+import { HumanUsesPage } from "../components/HumanUses";
 
 const TabReport = () => {
   const tabs = ["Geography", "Physical", "Biological", "Human Use"];
-  const [tab, setTab] = useState<string>(tabs[2]);
+  const [tab, setTab] = useState<string>(tabs[0]);
 
   return (
     <>
@@ -30,6 +31,9 @@ const TabReport = () => {
       </ReportPage>
       <ReportPage hidden={tab !== "Biological"}>
         <BiologicalPage />
+      </ReportPage>
+      <ReportPage hidden={tab !== "Human Use"}>
+        <HumanUsesPage />
       </ReportPage>
     </>
   );

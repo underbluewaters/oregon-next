@@ -66,7 +66,9 @@ function intersects(feature: Feature<Polygon | MultiPolygon>): ${layerName}[] {
 export default {
   search,
   neighbors,
-  intersects
+  intersects,
+  boundingBoxes,
+  featureData
 };
 `;
 }

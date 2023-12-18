@@ -1,0 +1,16 @@
+{
+  "ports": [
+    {
+      "name": "Port of Gold Beach",
+      "distance": 12984.554049442295
+    },
+    {
+      "name": "Port of Brookings",
+      "distance": 3783.237196593642
+    },
+    {
+      "name": "Port of Port Orford",
+      "distance": 48950.29637412488
+    }
+  ]
+}

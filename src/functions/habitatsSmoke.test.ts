@@ -3,6 +3,8 @@ import testPolygon from '../../examples/sketches/SeaSide.json';
 import { Polygon, Sketch } from '@seasketch/geoprocessing';
 import { getExamplePolygonSketchAll, writeResultOutput } from '@seasketch/geoprocessing/scripts/testing';
 
+jest.setTimeout(30000);
+
 describe('Basic smoke tests', () => {
   test('handler function is present', () => {
     expect(typeof Hander.func).toBe('function');

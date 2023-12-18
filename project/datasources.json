@@ -101,11 +101,11 @@
       "fgb"
     ],
     "precalc": true,
-    "layerName": "kelp",
+    "layerName": "BIO_Modern_Kelp_Dissolved",
     "classKeys": [],
     "created": "2023-12-12T20:31:24.688Z",
-    "lastUpdated": "2023-12-16T18:55:15.739Z",
-    "src": "data/src/kelp.geojson",
+    "lastUpdated": "2023-12-18T18:46:34.618Z",
+    "src": "data/src/BIO_Modern_Kelp_Dissolved.fgb",
     "propertiesToKeep": [],
     "explodeMulti": true
   },
@@ -220,6 +220,48 @@
     "src": "data/src/Substrate_Component_Intertidal_DRAFT_20200630_FIXED.fgb",
     "propertiesToKeep": [
       "Class_name"
+    ],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "critical-habitat-areas",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "BIO_CriticalHabitatAreas_USFWS_2019_CLIPPED",
+    "classKeys": [
+      "comname",
+      "sciname"
+    ],
+    "created": "2023-12-18T17:54:14.718Z",
+    "lastUpdated": "2023-12-18T17:55:50.838Z",
+    "src": "data/src/BIO_CriticalHabitatAreas_USFWS_2019_CLIPPED.fgb",
+    "propertiesToKeep": [
+      "comname",
+      "sciname"
+    ],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "critical-habitat-lines",
+    "geo_type": "vector",
+    "formats": [
+      "fgb"
+    ],
+    "precalc": false,
+    "layerName": "BIO_CriticalHabitatLines_USFWS_2019_CLIPPED",
+    "classKeys": [
+      "comname",
+      "sciname"
+    ],
+    "created": "2023-12-18T17:55:13.899Z",
+    "lastUpdated": "2023-12-18T17:55:51.809Z",
+    "src": "data/src/BIO_CriticalHabitatLines_USFWS_2019_CLIPPED.fgb",
+    "propertiesToKeep": [
+      "comname",
+      "sciname"
     ],
     "explodeMulti": true
   }

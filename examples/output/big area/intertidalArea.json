@@ -1,0 +1,58 @@
+{
+  "area": 1479207.103679,
+  "seaLevelRiseRisk": [
+    {
+      "CELLNAME": "Tillamook Head",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Neahkahnie Haystack Rock",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Ecola Point",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Indian Beach",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Cape Falcon",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Smuggler's Cove",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Arcadia Beach",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Arch Cape",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    }
+  ],
+  "seaLevelRiseRemainingIntertidalHabitat": {
+    "0.5 Meters": 1069445.672233,
+    "1 Meter": 755073.587811,
+    "1.5 Meters": 410193.299515
+  }
+}

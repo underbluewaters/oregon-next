@@ -1,0 +1,19 @@
+{
+  "area": 429813125.36851084,
+  "bbox": [
+    -124.0905800983243,
+    45.56355597380133,
+    -123.92896922197744,
+    46.13887357257092
+  ],
+  "cities": [
+    "Seaside",
+    "Gearhart",
+    "Cannon Beach"
+  ],
+  "counties": [
+    "TILLAMOOK",
+    "CLATSOP"
+  ],
+  "shorelineLength": 47.862341150011616
+}

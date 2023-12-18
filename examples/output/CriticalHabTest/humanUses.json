@@ -1,0 +1,16 @@
+{
+  "ports": [
+    {
+      "name": "Port of Port Orford",
+      "distance": 1356.2632348742668
+    },
+    {
+      "name": "Port of Gold Beach",
+      "distance": 32507.26033162328
+    },
+    {
+      "name": "Port of Bandon",
+      "distance": 30713.52566461929
+    }
+  ]
+}
