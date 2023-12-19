@@ -10,6 +10,6 @@ describe('shorelineLength', () => {
     console.time("shorelineLength");
     const result = shorelineLength(testSketch);
     console.timeEnd("shorelineLength");
-    expect(Math.round(result)).toBe(12);
+    expect(Math.round(result[0].length)).toBe(19729);
   });
 });

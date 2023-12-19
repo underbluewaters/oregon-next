@@ -1,5 +1,5 @@
 import React from "react";
-import { ResultsCard, Skeleton } from "@seasketch/geoprocessing/client-ui";
+import { ResultsCard, Skeleton, useSketchProperties } from "@seasketch/geoprocessing/client-ui";
 import { MarineMammalResults } from "../functions/marineMammals";
 import { SpeciesResults } from "../functions/species";
 import { CriticalHabitatsResults } from "../functions/criticalHabitats";
@@ -16,6 +16,9 @@ const PercentFormatter = new Intl.NumberFormat("en-US", {
 });
 
 export const BiologicalPage = () => {
+  const [{isCollection}] = useSketchProperties();
+  const noun = isCollection ? "collection" : "designated area";
+
   return (
     <>
       <ResultsCard title="Marine Mammal Species" functionName="marineMammals">
@@ -187,18 +190,18 @@ export const BiologicalPage = () => {
       <ResultsCard title="Kelp" functionName="kelp">
         {(data: KelpResults) => {
           if (data.area > 0) {
-            return <p>The selected designated area overlaps with <b>{NumberFormat.format(
+            return <p>The selected {noun} overlaps with <b>{NumberFormat.format(
               data.area * 0.000247105
             )}</b> acres of observed kelp, which represents <b>{PercentFormatter.format(data.fraction)}</b> of the total observed kelp in Oregon territorial waters.</p>
           } else {
-            return <p>The selected designated area <b>does not</b> overlap with any observed kelp areas.</p>
+            return <p>The selected {noun} <b>does not</b> overlap with any observed kelp areas.</p>
           }
         }}
       </ResultsCard>
       <ResultsCard title="Overlap with Gray Whale Migration Pathways" functionName="criticalHabitats">
         {(data: CriticalHabitatsResults) => {
           if (data.inGrayWhaleMigrationCooridor) {
-            return <p>The selected designated area overlaps with Gray Whale migration pathways.</p>
+            return <p>The selected {noun} overlaps with Gray Whale migration pathways.</p>
           } else {
             return <p>No overlap with Gray Whale migration pathways.</p>
           }

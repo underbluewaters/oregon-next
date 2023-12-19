@@ -7,6 +7,7 @@ import {
   getFirstFromParam,
   DefaultExtraParams,
   isSketchCollection,
+  toSketchArray,
 } from "@seasketch/geoprocessing";
 import bbox from "@turf/bbox";
 import { BBox } from "@turf/helpers";
@@ -19,12 +20,18 @@ import { shorelineLength } from "./shoreline";
 
 export interface AreaResults {
   /** area of the sketch in square meters */
-  area: number;
+  area: {
+    sketchName: string;
+    area: number;
+  }[];
   bbox: BBox;
   cities?: string[];
   counties?: string[];
-  /* In miles */
-  shorelineLength: number;
+  /* In meters */
+  shorelineLength: {
+    name: string;
+    length: number;
+  }[];
 }
 
 async function calculateArea(
@@ -34,11 +41,14 @@ async function calculateArea(
   extraParams: DefaultExtraParams = {}
 ): Promise<AreaResults> {
   return {
-    area: turfArea(sketch),
+    area: toSketchArray(sketch).map(s => ({
+      sketchName: s.properties.name || "",
+      area: turfArea(s)
+      })),
     bbox: bbox(sketch),
-    cities: isSketchCollection(sketch) ? undefined : nearestCities(sketch),
-    counties: isSketchCollection(sketch) ? undefined : adjacentCounties(sketch),
-    shorelineLength: isSketchCollection(sketch) ? 0 : shorelineLength(sketch),
+    cities: nearestCities(sketch),
+    counties: adjacentCounties(sketch),
+    shorelineLength: shorelineLength(sketch),
   };
 }
 

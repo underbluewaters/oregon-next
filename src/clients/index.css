@@ -1,0 +1,20 @@
+table td {
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+  padding: 2px 5px;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th, thead td {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+thead th:first-child, thead td:first-child {
+  text-align: left;
+}

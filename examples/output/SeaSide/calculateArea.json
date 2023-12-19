@@ -1,5 +1,10 @@
 {
-  "area": 110817867.98749565,
+  "area": [
+    {
+      "sketchName": "SeaSide",
+      "area": 110817867.98749565
+    }
+  ],
   "bbox": [
     -124.09058009961232,
     45.88440261011534,
@@ -14,5 +19,10 @@
   "counties": [
     "CLATSOP"
   ],
-  "shorelineLength": 12.25878369255129
+  "shorelineLength": [
+    {
+      "name": "SeaSide",
+      "length": 19728.599982905274
+    }
+  ]
 }

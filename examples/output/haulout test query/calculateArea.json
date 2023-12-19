@@ -1,5 +1,10 @@
 {
-  "area": 6767853.891983667,
+  "area": [
+    {
+      "sketchName": "haulout test query",
+      "area": 6767853.891983667
+    }
+  ],
   "bbox": [
     -124.41762310295981,
     43.270462484493585,
@@ -14,5 +19,10 @@
   "counties": [
     "COOS"
   ],
-  "shorelineLength": 5.970318622294214
+  "shorelineLength": [
+    {
+      "name": "haulout test query",
+      "length": 9608.296452877456
+    }
+  ]
 }

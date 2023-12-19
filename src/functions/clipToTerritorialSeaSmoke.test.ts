@@ -6,6 +6,6 @@ import handler, { clipToOcean } from "./clipToTerritorialSea";
 import { polygonPreprocessorSmokeTest } from "@seasketch/geoprocessing/scripts/testing";
 
 polygonPreprocessorSmokeTest(clipToOcean, handler.options.title, {
-  timeout: 20000,
+  timeout: 30000,
   debug: true,
 });

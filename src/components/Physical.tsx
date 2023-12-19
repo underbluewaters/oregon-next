@@ -1,5 +1,5 @@
 import React from "react";
-import { ResultsCard, Skeleton } from "@seasketch/geoprocessing/client-ui";
+import { ResultsCard, Skeleton, useSketchProperties } from "@seasketch/geoprocessing/client-ui";
 import { RocksAndIslandsResults } from "../functions/rocksAndIslands";
 import { IntertidalAreaResults } from "../functions/intertidalArea";
 import { BathymetryResults } from "../functions/bathymetry";
@@ -12,6 +12,8 @@ const NumberFormat = new Intl.NumberFormat("en-US", {
 });
 
 export const PhysicalPage = () => {
+  const [{isCollection}] = useSketchProperties();
+  const noun = isCollection ? "collection" : "zone";
   return (
     <>
       <ResultsCard title="Islands and Rocks" functionName="rocksAndIslands" skeleton={<>
@@ -22,8 +24,8 @@ export const PhysicalPage = () => {
       </>}>
         {(data: RocksAndIslandsResults) => {
           return <>
-            <p>This zone includes <b>{NumberFormat.format(data.area * 0.000247105)} acres</b> of offshore islands.</p>
-            <p>There are <b>{data.count}</b> islands included within this zone.</p>
+            <p>This {noun} includes <b>{NumberFormat.format(data.area * 0.000247105)} acres</b> of offshore islands.</p>
+            <p>There are <b>{data.count}</b> islands included within this {noun}.</p>
           </>
         }}
       </ResultsCard>
@@ -35,7 +37,7 @@ export const PhysicalPage = () => {
       </>}>
         {(data: IntertidalAreaResults) => {
           return <>
-            <p>This zone includes <b>{NumberFormat.format(data.area * 0.000247105)} acres</b> of intertidal area in the 0m Sea Level Rise scenario.</p>
+            <p>This {noun} includes <b>{NumberFormat.format(data.area * 0.000247105)} acres</b> of intertidal area in the 0m Sea Level Rise scenario.</p>
           </>
         }}
       </ResultsCard>
@@ -71,6 +73,9 @@ export const PhysicalPage = () => {
                 ))}
               </tbody>
             </table>
+            <p>
+            Positive values for minimum depth represents elevation above mean lower low water. Unusually high values indicate cliff edges that fall within 100m of Mean High Water.
+            </p>
           </>
         }}
       </ResultsCard>
@@ -98,6 +103,9 @@ export const PhysicalPage = () => {
                 }
               </tbody>
             </table>
+            <p>
+            *due to the fact that future intertidal areas may be above present-day MHW, this analysis is based on intertidal area contained in the unclipped site polygon.
+            </p>
           </>
         }}
       </ResultsCard>

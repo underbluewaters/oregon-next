@@ -24,6 +24,11 @@ export default function SubstrateTable({rows, title}: {title: string, rows:{habi
           <td>{NumberFormat.format(row.fraction * 100)}%</td>
         </tr>
       ))}
+      <tr>
+        <td>Total</td>
+        <td><b>{NumberFormat.format(rows.reduce((sum, row) => sum + row.area, 0) * 0.000247105)}</b></td>
+        <td><b>{NumberFormat.format(rows.reduce((sum, row) => sum + row.fraction, 0) * 100)}%</b></td>
+      </tr>
     </tbody>
   </table>
   </>;

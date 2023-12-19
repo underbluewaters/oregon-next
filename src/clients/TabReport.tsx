@@ -4,6 +4,7 @@ import { GeographyPage } from "../components/Geography";
 import { PhysicalPage } from "../components/Physical";
 import { BiologicalPage } from "../components/Biological";
 import { HumanUsesPage } from "../components/HumanUses";
+require("./index.css");
 
 const TabReport = () => {
   const tabs = ["Geography", "Physical", "Biological", "Human Use"];

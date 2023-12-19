@@ -1,5 +1,10 @@
 {
-  "area": 218594414.70225647,
+  "area": [
+    {
+      "sketchName": "CriticalHabTest",
+      "area": 218594414.70225647
+    }
+  ],
   "bbox": [
     -124.703775695,
     42.708989038,
@@ -14,5 +19,10 @@
   "counties": [
     "CURRY"
   ],
-  "shorelineLength": 18.66041507183462
+  "shorelineLength": [
+    {
+      "name": "CriticalHabTest",
+      "length": 30031.027033366605
+    }
+  ]
 }
