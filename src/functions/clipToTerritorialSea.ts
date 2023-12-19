@@ -22,7 +22,7 @@ export async function clipToOcean(
   }
 
   const clipToSea: DatasourceClipOperation = {
-    datasourceId: "territorial-sea",
+    datasourceId: "territorial-sea-2",
     operation: "intersection"
   };
 

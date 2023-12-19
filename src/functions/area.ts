@@ -23,6 +23,7 @@ export interface AreaResults {
   bbox: BBox;
   cities?: string[];
   counties?: string[];
+  /* In miles */
   shorelineLength: number;
 }
 

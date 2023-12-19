@@ -1,7 +1,7 @@
 [
   {
     "geographyId": "territorial-sea",
-    "datasourceId": "territorial-sea",
+    "datasourceId": "territorial-sea-2",
     "display": "Territorial Sea",
     "precalc": true,
     "groups": ["default-boundary"]
