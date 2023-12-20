@@ -55,7 +55,7 @@ export async function habitats(sketch: Sketch<Polygon | MultiPolygon> | SketchCo
       intertidalHabitats.add(habitat);
     }
   }
-  
+
   // if a collection, there are multiple entries for each sketch. Sum them up.
   results.subtidal = Array.from(subtidalHabitats).map((habitat) => {
     const newRecord = {habitat, area: 0, fraction: 0};
@@ -84,8 +84,8 @@ export async function habitats(sketch: Sketch<Polygon | MultiPolygon> | SketchCo
 export default new GeoprocessingHandler(habitats, {
   title: "habitats",
   description: "Calculates the area of overlapping intertidal and subtidal habitats.",
-  timeout: 60, // seconds
-  memory: 2048, // megabytes
+  timeout: 120, // seconds
+  memory: 4096, // megabytes
   executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],

@@ -42,9 +42,9 @@ export async function rocksAndIslands(sketch: Sketch<Polygon | MultiPolygon> | S
 export default new GeoprocessingHandler(rocksAndIslands, {
   title: "rocksAndIslands",
   description: "Calculates the area of offshore rocks and islands within a sketch.",
-  timeout: 30, // seconds
+  timeout: 120, // seconds
   memory: 2048, // megabytes
-  executionMode: "sync",
+  executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
 });

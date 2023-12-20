@@ -39,9 +39,9 @@ export async function intertidalArea(sketch: Sketch<Polygon | MultiPolygon> | Sk
 export default new GeoprocessingHandler(intertidalArea, {
   title: "intertidalArea",
   description: "Calculates the area of intertidal area within a sketch.",
-  timeout: 60, // seconds
+  timeout: 120, // seconds
   memory: 4096, // megabytes
-  executionMode: "sync",
+  executionMode: "async",
   // Specify any Sketch Class form attributes that are required
   requiresProperties: [],
 });
