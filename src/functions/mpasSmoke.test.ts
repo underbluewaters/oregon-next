@@ -1,21 +1,22 @@
-import Hander, { intertidalArea } from './intertidalArea';
-import testPolygon from '../../examples/sketches/SeaSide.json';
+import Handler from './mpas';
+import testPolygon from '../../examples/sketches/haulout test query.json';
 import { Polygon, Sketch } from '@seasketch/geoprocessing';
 import { getExamplePolygonSketchAll, writeResultOutput } from '@seasketch/geoprocessing/scripts/testing';
 
 jest.setTimeout(30000);
+
 describe('Basic smoke tests', () => {
   test('handler function is present', () => {
-    expect(typeof Hander.func).toBe('function');
+    expect(typeof Handler.func).toBe('function');
   });
   test('tests run against all examples', async () => {
     const examples = await getExamplePolygonSketchAll();
 
     for (const example of examples) {
       // @ts-ignore
-      const result = await Hander.func(example);
+      const result = await Handler.func(example);
       expect(result).toBeTruthy();
-      writeResultOutput(result, 'intertidalArea', example.properties.name);
+      writeResultOutput(result, 'mpas', example.properties.name);
     }
   });
 });
@@ -24,10 +25,10 @@ describe('Basic smoke tests', () => {
  * @jest-environment node
  * @group smoke
  */
-describe('Intertidal Area', () => {
+describe('MPAs', () => {
   test('Returns a result', async () => {
-    const results = await intertidalArea(testPolygon as Sketch<Polygon>);
+    const results = await Handler.func(testPolygon as Sketch<Polygon>);
     expect(results).toBeTruthy();
-    expect(Math.round(results.area * 0.000247105)).toBe(117);
+    expect(results.mpas).toBeTruthy();
   });
 });

@@ -1,0 +1,144 @@
+{
+  "ports": [
+    {
+      "name": "Port of Nehalem",
+      "distance": 16400.068497524357
+    },
+    {
+      "name": "Port of Astoria",
+      "distance": 21164.094054629935
+    },
+    {
+      "name": "Port of Garibaldi",
+      "distance": 34057.6291213588
+    }
+  ],
+  "stateParks": [
+    {
+      "name": "John Yeon",
+      "distance": 0
+    },
+    {
+      "name": "Ecola",
+      "distance": 0
+    },
+    {
+      "name": "Elmer Feldenheimer",
+      "distance": 0
+    }
+  ],
+  "outfalls": 42,
+  "overlapsResearch": true,
+  "parkAttendance": [
+    {
+      "NAME": "John Yeon",
+      "Y2016": null,
+      "Y2017": null,
+      "Y2018": null,
+      "Trend": "(null)",
+      "BIN": "(null)"
+    },
+    {
+      "NAME": "Ecola",
+      "Y2016": 339056,
+      "Y2017": 375472,
+      "Y2018": 355604,
+      "Trend": "Increasing",
+      "BIN": "200,000-500,000"
+    },
+    {
+      "NAME": "Elmer Feldenheimer",
+      "Y2016": null,
+      "Y2017": null,
+      "Y2018": null,
+      "Trend": "(null)",
+      "BIN": "(null)"
+    }
+  ],
+  "recreation": [
+    {
+      "activity": "Beach going (dog walking, kite flying, jogging, etc.)",
+      "occurances": 321
+    },
+    {
+      "activity": "Biking or Hiking",
+      "occurances": 41
+    },
+    {
+      "activity": "Scenic enjoyment",
+      "occurances": 225
+    },
+    {
+      "activity": "Photography",
+      "occurances": 381
+    },
+    {
+      "activity": "Tide pooling",
+      "occurances": 206
+    },
+    {
+      "activity": "Watching birds and/or other marine life from shore",
+      "occurances": 109
+    },
+    {
+      "activity": "Storm Watching",
+      "occurances": 45
+    },
+    {
+      "activity": "Surfing (board, boogie, stand up paddle)",
+      "occurances": 15
+    },
+    {
+      "activity": "Swimming or body surfing in the ocean",
+      "occurances": 34
+    },
+    {
+      "activity": "Free diving/snorkeling (from shore, from boat)",
+      "occurances": 12
+    },
+    {
+      "activity": "Skim boarding",
+      "occurances": 10
+    },
+    {
+      "activity": "Watching whales and/or other marine life from a boat (private or non-commercial boat, charter)",
+      "occurances": 14
+    },
+    {
+      "activity": "Sail boating",
+      "occurances": 2
+    },
+    {
+      "activity": "Using a personal water craft (PWC)",
+      "occurances": 1
+    },
+    {
+      "activity": "Kite boarding",
+      "occurances": 1
+    },
+    {
+      "activity": "Windsurfing",
+      "occurances": 1
+    },
+    {
+      "activity": "SCUBA diving (from shore, from boat)",
+      "occurances": 1
+    },
+    {
+      "activity": "Power boating",
+      "occurances": 4
+    },
+    {
+      "activity": "Surfing (tow-in)",
+      "occurances": 1
+    },
+    {
+      "activity": "Kayaking in the ocean or estuary/slough",
+      "occurances": 1
+    },
+    {
+      "activity": "Using off-road vehicle/driving on beach",
+      "occurances": 2
+    }
+  ]
+}

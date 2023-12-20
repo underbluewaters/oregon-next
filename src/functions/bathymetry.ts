@@ -46,9 +46,9 @@ export async function bathymetry(
       calcMin: true,
     })[0];
     results.push({
-      min: stats.max > 0 ? 0 : Math.abs(stats.max),
-      max: Math.abs(stats.min),
-      mean: Math.abs(stats.mean),
+      min: Math.abs(stats.max),
+      max: stats.min,
+      mean: stats.mean,
       sketchName: sketch.properties.name
     })
   }

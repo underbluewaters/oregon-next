@@ -1,0 +1,31 @@
+{
+  "mpas": [
+    {
+      "name": "Haystack Rock Marine Garden"
+    },
+    {
+      "name": "Chapman Point Marine Garden"
+    },
+    {
+      "name": "Ecola Point Marine Conservation Area"
+    },
+    {
+      "name": "Cape Blanco Marine Research Area"
+    },
+    {
+      "name": "Blacklock Point Marine Conservation Area"
+    },
+    {
+      "name": "Orford Reef Comparison Area"
+    },
+    {
+      "name": "McKenzie Comparison Area"
+    },
+    {
+      "name": "Redfish Rocks Marine Reserve"
+    },
+    {
+      "name": "Yaquina Head Marine Garden"
+    }
+  ]
+}

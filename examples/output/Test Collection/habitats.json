@@ -1,0 +1,106 @@
+{
+  "subtidal": [
+    {
+      "habitat": "sand",
+      "area": 493026772.476922,
+      "fraction": 0.7209341908730116
+    },
+    {
+      "habitat": "rock",
+      "area": 83990782.40818,
+      "fraction": 0.12281650842615605
+    },
+    {
+      "habitat": "shell",
+      "area": 1904082.6433370002,
+      "fraction": 0.002784267217240744
+    },
+    {
+      "habitat": "muddy sand",
+      "area": 31194798.526585,
+      "fraction": 0.04561496066882022
+    },
+    {
+      "habitat": "gravel mix",
+      "area": 10721224.846901,
+      "fraction": 0.0156772370014247
+    },
+    {
+      "habitat": "gravel",
+      "area": 1208454.302267,
+      "fraction": 0.0017670765022251402
+    },
+    {
+      "habitat": "mud",
+      "area": 33953777.145912,
+      "fraction": 0.04964930957155359
+    },
+    {
+      "habitat": "cobble",
+      "area": 435628.87985,
+      "fraction": 0.0006370034479826891
+    },
+    {
+      "habitat": "boulder",
+      "area": 263126.62165,
+      "fraction": 0.00038475999411425726
+    },
+    {
+      "habitat": "sand mud",
+      "area": 4128133.242794,
+      "fraction": 0.006036411337781828
+    },
+    {
+      "habitat": "sandy mud",
+      "area": 8438361.115068,
+      "fraction": 0.012339092687041846
+    },
+    {
+      "habitat": "rock mix",
+      "area": 9757276.77008,
+      "fraction": 0.014267692600184153
+    },
+    {
+      "habitat": "gravelly mud",
+      "area": 3202966.82903,
+      "fraction": 0.0046835758790115724
+    }
+  ],
+  "intertidal": [
+    {
+      "habitat": "Unclassified",
+      "area": 28106189.908437,
+      "fraction": 0.04109860642732277
+    },
+    {
+      "habitat": "Fine Unconsolidated Substrate",
+      "area": 6816853.142654,
+      "fraction": 0.00996802360246968
+    },
+    {
+      "habitat": "Coarse Unconsolidated Substrate",
+      "area": 99817.863836,
+      "fraction": 0.00014595984420429735
+    },
+    {
+      "habitat": "Very Coarse Woody Debris",
+      "area": 887.377787,
+      "fraction": 0.0000012975785952870828
+    },
+    {
+      "habitat": "Rock Substrate",
+      "area": 790558.128418,
+      "fraction": 0.0011560029119428627
+    },
+    {
+      "habitat": "Boulder",
+      "area": 240980.37046499999,
+      "fraction": 0.0003523763781115872
+    },
+    {
+      "habitat": "Anthropogenic Rock Rubble",
+      "area": 16436.464159,
+      "fraction": 0.000024034412836752357
+    }
+  ]
+}

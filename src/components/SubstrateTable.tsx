@@ -5,9 +5,9 @@ const NumberFormat = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 1,
 });
 
-export default function SubstrateTable({rows, title}: {title: string, rows:{habitat: string, area: number, fraction: number}[]}) {
-  return <><h3>{title}</h3>
-  <table>
+export default function SubstrateTable({rows}: {rows:{habitat: string, area: number, fraction: number}[]}) {
+  return <>
+  <table className="TableCardTable">
     <thead>
       <tr>
         <th>Name</th>

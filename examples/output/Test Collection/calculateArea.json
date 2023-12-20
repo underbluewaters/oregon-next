@@ -1,0 +1,55 @@
+{
+  "area": [
+    {
+      "sketchName": "Seaside",
+      "area": 129089109.25375952
+    },
+    {
+      "sketchName": "CriticalHabTest",
+      "area": 320526646.4534235
+    },
+    {
+      "sketchName": "MPA Test",
+      "area": 67227145.32839
+    },
+    {
+      "sketchName": "Gold Beach",
+      "area": 167029189.8135152
+    }
+  ],
+  "bbox": [
+    -124.703794764,
+    42.281420559,
+    -123.9287049,
+    46.007752846
+  ],
+  "cities": [
+    "Port Orford",
+    "Gold Beach",
+    "Bandon"
+  ],
+  "counties": [
+    "CLATSOP",
+    "COOS",
+    "CURRY",
+    "LINCOLN"
+  ],
+  "shorelineLength": [
+    {
+      "name": "Seaside",
+      "length": 22528.014842173638
+    },
+    {
+      "name": "CriticalHabTest",
+      "length": 47215.19465903377
+    },
+    {
+      "name": "MPA Test",
+      "length": 16095.579452403552
+    },
+    {
+      "name": "Gold Beach",
+      "length": 27576.489682587144
+    }
+  ]
+}

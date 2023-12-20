@@ -1,0 +1,17 @@
+{
+  "habitats": [
+    {
+      "commonName": "Western snowy plover",
+      "scientificName": "Charadrius nivosus nivosus"
+    },
+    {
+      "commonName": "Steller sea lion",
+      "scientificName": "Eumetopias jubatus"
+    },
+    {
+      "commonName": "Coho salmon",
+      "scientificName": "Oncorhynchus (=Salmo) kisutch"
+    }
+  ],
+  "inGrayWhaleMigrationCooridor": true
+}

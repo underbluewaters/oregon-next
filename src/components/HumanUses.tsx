@@ -1,6 +1,8 @@
 import React from "react";
 import { ResultsCard, useSketchProperties } from "@seasketch/geoprocessing/client-ui";
 import { HumanUsesResults } from "../functions/humanUses";
+import { OverlappingMPAs } from "../functions/mpas";
+import ResultsTableCard from "./ResultsTableCard";
 
 const NumberFormat = new Intl.NumberFormat("en-US", {
   style: "decimal",
@@ -17,7 +19,7 @@ export const HumanUsesPage = () => {
   const noun = isCollection ? "collection" : "designated area";
   return (
     <>
-      <ResultsCard title="Ports" functionName="humanUses">
+      <ResultsTableCard title="Ports" functionName="humanUses" rows={3}>
         {(data: HumanUsesResults) => {
           return <>
             <table>
@@ -39,11 +41,11 @@ export const HumanUsesPage = () => {
             </table>
           </>
         }}
-      </ResultsCard>
-      <ResultsCard title="State Parks" functionName="humanUses">
+      </ResultsTableCard>
+      <ResultsTableCard title="State Parks" functionName="humanUses" rows={3}>
         {(data: HumanUsesResults) => {
           return <>
-            <h3>The three nearest state parks are:</h3>
+            <p>The three nearest state parks are as follows:</p>
             <table>
               <thead>
                 <tr>
@@ -63,24 +65,34 @@ export const HumanUsesPage = () => {
             </table>
           </>
         }}
-      </ResultsCard>
+      </ResultsTableCard>
       <ResultsCard title="NPDES Outfalls" functionName="humanUses">
         {(data: HumanUsesResults) => {
-          return <p>There are {data.outfalls} NPDES outfalls within 1 mile of this {noun}.</p>
+          if (data.outfalls > 0) {
+            return <p>There are <b>{data.outfalls} NPDES outfalls</b> within 1 mile of this {noun}.</p>
+          } else {
+            return <p>There are <b>no NPDES outfalls</b> within 1 mile of this {noun}.</p>
+          }
         }}
       </ResultsCard>
-      <ResultsCard title="Attendance at Nearby Parks" functionName="humanUses">
+      <ResultsTableCard title="Attendance at Nearby Parks" functionName="humanUses" rows={3}>
         {(data: HumanUsesResults) => {
           return <>
-            <h3>Parking lot visitor counts for nearby OPRD parking lots for the years 2016-2018:</h3>
-            <table>
+            <p>Parking lot visitor counts for nearby OPRD parking lots for the years 2016-2018.</p>
+            <table style={{
+              display:"block",
+              maxWidth: "100%",
+              overflowX: "auto",
+            }} className="parking">
               <thead>
+                <tr>
                 <th>Name</th>
                 <th>Bin</th>
                 <th>Trend</th>
                 <th>2016</th>
                 <th>2017</th>
                 <th>2018</th>
+                </tr>
               </thead>
               <tbody>
                 {data.parkAttendance.length === 0 && <tr><td colSpan={6}>No data</td></tr>}
@@ -99,7 +111,7 @@ export const HumanUsesPage = () => {
             </table>
           </>
         }}
-      </ResultsCard>
+      </ResultsTableCard>
       <ResultsCard title="Overlap with Long Term Research Areas" functionName="humanUses">
         {(data: HumanUsesResults) => {
           if (data.overlapsResearch) {
@@ -109,10 +121,10 @@ export const HumanUsesPage = () => {
           }
         }}
       </ResultsCard>
-      <ResultsCard title="Recreational Activities" functionName="humanUses">
+      <ResultsTableCard title="Recreational Activities" functionName="humanUses" rows={isCollection ? 10 : 6}>
         {(data: HumanUsesResults) => {
           return <>
-            <h3>Recreational activities in or near this collection:</h3>
+            {/* <p>Recreational activities in or near this collection:</p> */}
             <table>
               <thead>
                 <tr>
@@ -128,7 +140,7 @@ export const HumanUsesPage = () => {
                     <td>{NumberFormat.format(row.occurances)}</td>
                   </tr>
                 ))}
-                <tr><td>Total</td><td>
+                <tr className="total"><td>Total</td><td>
                   {NumberFormat.format(data.recreation.reduce((total, row) => total + row.occurances, 0))}
                 </td></tr>
               </tbody>
@@ -148,13 +160,33 @@ export const HumanUsesPage = () => {
                 Additional <b>Shore group of the Recreational Ocean Users Study.</b> This group aggregated the following activities: bird watching, tide-pooling and whale watching.
                 </li>
               </ul>
-            </p>
-            <p>
             The data were collected to create a baseline of use patterns for Oregon's recreational non-consumptive ocean users. These data include only the last trip data collected over the summer of 2010. These data were collected as part of Oregon's Territorial Sea Plan revision.
             </p>
           </>;
         }}
-      </ResultsCard>
+      </ResultsTableCard>
+      <ResultsTableCard title="Marine Conservation Areas" functionName="mpas" rows={isCollection ? 8 : 3}>
+        {(data: OverlappingMPAs) => {
+          return <>
+            <p>This {noun} overlaps with the following areas</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.mpas.length === 0 && <tr><td colSpan={2}>No data</td></tr>}
+                {data.mpas.length > 0 && data.mpas.sort((a, b) => a.name.localeCompare(b.name)).map((row) => (
+                  <tr key={row.name}>
+                    <td>{row.name}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </>
+        }}
+      </ResultsTableCard>
     </>
   );
 };

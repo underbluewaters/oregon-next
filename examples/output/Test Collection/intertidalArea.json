@@ -1,0 +1,400 @@
+{
+  "area": 3765660.394833,
+  "seaLevelRiseRisk": [
+    {
+      "CELLNAME": "Rocky Creek State Wayside",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Boiler Bay",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Fogarty Creek",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Otter / Gull Rock",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Seal Rock",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Whale Cove",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Smelt Sands",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Yachats Ocean Rd State Wayside",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Yachats State Park",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "South Yaquina Head",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "BLM Tide Pool",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Yaquina Head Marine Gardens",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Jump Off Joe Platforms",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Arch Cape",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Smuggler's Cove",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Cape Kiwanda Head",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Three Arch Rocks",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "South Cliff Face",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "South Intertidal",
+      "Risk05": "None",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Cape Maeres",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Maxwell Point",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Pillar and Pyramid Rocks",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "South Cascade Head",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Road's End Headland",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Ocean Lake Intertidal",
+      "Risk05": "Moderate",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Otter Crest",
+      "Risk05": "Low",
+      "Risk10": "High",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Pirate Cove",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Harts Cove",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "North Depoe Bay",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Bob Creek",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Gregory Point/Squaw Island",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Shore Acres Park",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Bandon Haystack Rock",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Coquille Point and Rocks",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Sea Lion Point",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Stonefield Beach State Park",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Neptune State Park",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Strawberry Hill",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Cape Perpetua Park",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Cape Falcon",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Tillamook Head",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Indian Beach",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Neahkahnie Haystack Rock",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Ecola Point",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Arcadia Beach",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Sister's Rocks",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Arizona Beach",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Lookout Rock",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Five Mile Point",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "South Cove Cape Arago",
+      "Risk05": "Moderate",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "North Cove Cape Arago",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Middle Cove Cape Arago",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Sunset Bay",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Cape Blanco",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Castle and Gull Rocks",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Blacklock Point / Tower Rock",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "The Heads",
+      "Risk05": "Low",
+      "Risk10": "Moderate",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Nellie's & Tichenor Cove",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Battle Rock",
+      "Risk05": "Low",
+      "Risk10": "Low",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Nesika Head",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Humbug Mountain",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Rocky & Coal Points",
+      "Risk05": "Moderate",
+      "Risk10": "High",
+      "Risk15": "High"
+    },
+    {
+      "CELLNAME": "Otter Point",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    },
+    {
+      "CELLNAME": "Meyers Creek Rocks",
+      "Risk05": "None",
+      "Risk10": "Low",
+      "Risk15": "Moderate"
+    },
+    {
+      "CELLNAME": "Cape Sebastian",
+      "Risk05": "None",
+      "Risk10": "None",
+      "Risk15": "None"
+    }
+  ],
+  "seaLevelRiseRemainingIntertidalHabitat": {
+    "0.5 Meters": 2784808.466178,
+    "1 Meter": 1614470.09937,
+    "1.5 Meters": 699718.7521180001
+  }
+}

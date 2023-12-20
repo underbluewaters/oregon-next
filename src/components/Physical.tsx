@@ -5,6 +5,10 @@ import { IntertidalAreaResults } from "../functions/intertidalArea";
 import { BathymetryResults } from "../functions/bathymetry";
 import { HabitatsResults } from "../functions/habitats";
 import SubstrateTable from "./SubstrateTable";
+import { tableCardStyle, tableCardTitleStyle } from "./styles";
+import TableSkeleton from "./TableSkeleton";
+import ResultsTableCard from "./ResultsTableCard";
+import SeaLevelRiseRisk from "./SeaLevelRiseRisk";
 
 const NumberFormat = new Intl.NumberFormat("en-US", {
   style: "decimal",
@@ -12,7 +16,7 @@ const NumberFormat = new Intl.NumberFormat("en-US", {
 });
 
 export const PhysicalPage = () => {
-  const [{isCollection}] = useSketchProperties();
+  const [{ isCollection }] = useSketchProperties();
   const noun = isCollection ? "collection" : "zone";
   return (
     <>
@@ -41,24 +45,22 @@ export const PhysicalPage = () => {
           </>
         }}
       </ResultsCard>
-      <ResultsCard title="Substrate Types" functionName="habitats">
-        {(data: HabitatsResults) => {
-          return <>
-            <SubstrateTable title="Subtidal Substrate" rows={data.subtidal} />
-            <SubstrateTable title="Intertidal Substrate" rows={data.intertidal} />
-          </>
-        }}
+      <ResultsCard title="Subtidal Substrate" functionName="habitats" style={tableCardStyle} titleStyle={tableCardTitleStyle} skeleton={<TableSkeleton rows={10} />}>
+        {(data: HabitatsResults) => <SubstrateTable rows={data.subtidal} />}
       </ResultsCard>
-      <ResultsCard title="Average Depth" functionName="bathymetry">
+      <ResultsCard title="Intertidal Substrate" functionName="habitats" style={tableCardStyle} titleStyle={tableCardTitleStyle} skeleton={<TableSkeleton rows={10} />}>
+        {(data: HabitatsResults) => <SubstrateTable rows={data.intertidal} />}
+      </ResultsCard>
+      <ResultsCard title="Average Depth" functionName="bathymetry" style={tableCardStyle} titleStyle={tableCardTitleStyle} skeleton={<TableSkeleton rows={isCollection ? 5 : 1} />}>
         {(data: BathymetryResults) => {
           return <>
-            <table>
+            <table className="TableCardTable">
               <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Average Depth (m)</th>
-                  <th>Maximum Depth (m)</th>
-                  <th>Minimum Depth (m)</th>
+                  <th>Average (m)</th>
+                  <th>Maximum (m)</th>
+                  <th>Minimum (m)</th>
                 </tr>
               </thead>
               <tbody>
@@ -73,17 +75,17 @@ export const PhysicalPage = () => {
                 ))}
               </tbody>
             </table>
-            <p>
-            Positive values for minimum depth represents elevation above mean lower low water. Unusually high values indicate cliff edges that fall within 100m of Mean High Water.
+            <p style={{ fontSize: 14, padding: "12px 16px", marginBottom: 0, backgroundColor: tableCardTitleStyle.backgroundColor, borderTop: "1px solid #eee" }}>
+              Positive values for minimum depth represents elevation above mean lower low water. Unusually high values indicate cliff edges that fall within 100m of Mean High Water.
             </p>
           </>
         }}
       </ResultsCard>
-      <ResultsCard title="Sea Level Rise" functionName="intertidalArea">
+      <ResultsCard title="Sea Level Rise" functionName="intertidalArea" style={tableCardStyle} titleStyle={tableCardTitleStyle} skeleton={<TableSkeleton rows={isCollection ? 5 : 1} />}>
         {(data: IntertidalAreaResults) => {
           return <>
-            <p><b>Sea level rise is predicted to cause the following changes in the intertidal habitat within this designated area:</b></p>
-            <table>
+            <p style={{ margin: 0, padding: "8px 16px", paddingBottom: 16, color: tableCardTitleStyle.color, paddingTop: 0, fontSize: 15, backgroundColor: tableCardTitleStyle.backgroundColor }}>Sea level rise is predicted to cause the following changes in the intertidal habitat within this designated area.</p>
+            <table className="TableCardTable">
               <thead>
                 <tr>
                   <th>Sea Level Rise Scenario</th>
@@ -103,49 +105,17 @@ export const PhysicalPage = () => {
                 }
               </tbody>
             </table>
-            <p>
-            *due to the fact that future intertidal areas may be above present-day MHW, this analysis is based on intertidal area contained in the unclipped site polygon.
+            <p style={{ fontSize: 14, padding: "12px 16px", marginBottom: 0, backgroundColor: tableCardTitleStyle.backgroundColor, borderTop: "1px solid #eee" }}>
+              * due to the fact that future intertidal areas may be above present-day MHW, this analysis is based on intertidal area contained in the unclipped site polygon.
             </p>
           </>
         }}
       </ResultsCard>
-      <ResultsCard title="Sea Level Rise Risk" functionName="intertidalArea">
+      <ResultsTableCard title="Sea Level Rise Risk" functionName="intertidalArea" rows={isCollection ? 5 : 1}>
         {(data: IntertidalAreaResults) => {
-          return <>
-            <p>Nearby sites have the following estimated risk from sea level rise (slr) of 0.5, 1.0, and 1.5 meters:</p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>SLR 0.5m</th>
-                  <th>SLR 1.0m</th>
-                  <th>SLR 1.5m</th>
-                </tr>
-              </thead>
-              <tbody>
-                {(data.seaLevelRiseRisk || []).length === 0 && <tr><td colSpan={4}>No nearby sites found</td></tr>}
-                {(data.seaLevelRiseRisk || []).length > 0 && data.seaLevelRiseRisk.sort((a, b) => a.CELLNAME.localeCompare(b.CELLNAME)).map((site) => (
-                  <tr key={site.CELLNAME}>
-                    <td>{site.CELLNAME}</td>
-                    <td>{site.Risk05}</td>
-                    <td>{site.Risk10}</td>
-                    <td>{site.Risk15}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            <p>
-              Ranges for Estimated SLR Risk Levels:
-            </p>
-            <ul>
-              <li>Increase or Less than 10% Loss (Minor)</li>
-              <li>11-29% Loss (Low)</li>
-              <li>30-49% Loss (Moderate)</li>
-              <li>More than 50% Loss (High)</li>
-            </ul>
-          </>
+          return <SeaLevelRiseRisk data={data} />
         }}
-      </ResultsCard>
+      </ResultsTableCard>
 
     </>
   );

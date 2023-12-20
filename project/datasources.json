@@ -354,5 +354,36 @@
     "src": "data/src/HUM_TerritorialSeaPolygon_OCMP_2015.fgb",
     "propertiesToKeep": [],
     "explodeMulti": false
+  },
+  {
+    "src": "data/src/BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED.fgb",
+    "layerName": "BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED",
+    "geo_type": "vector",
+    "datasourceId": "kelp-full",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [
+      "KELP90",
+      "KELP96",
+      "KELP97",
+      "KELP98",
+      "KELP99",
+      "KELP2010",
+      "ACRESR"
+    ],
+    "created": "2023-12-19T22:54:26.706Z",
+    "lastUpdated": "2023-12-19T22:54:26.706Z",
+    "propertiesToKeep": [
+      "KELP90",
+      "KELP96",
+      "KELP97",
+      "KELP98",
+      "KELP99",
+      "KELP2010",
+      "ACRESR"
+    ],
+    "explodeMulti": false,
+    "precalc": false
   }
 ]

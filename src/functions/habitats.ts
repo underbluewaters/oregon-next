@@ -29,6 +29,8 @@ export async function habitats(sketch: Sketch<Polygon | MultiPolygon> | SketchCo
     subtidal: [],
     intertidal: []
   };
+  const subtidalHabitats = new Set<string>();
+  const intertidalHabitats = new Set<string>();
   for (const sketch of sketches) {
     let url = `${project.dataBucketUrl()}habitats.fgb`;
     let features = (await fgbFetchAll(url, sketch.bbox || bbox(sketch))) as Feature<Polygon>[];
@@ -39,6 +41,7 @@ export async function habitats(sketch: Sketch<Polygon | MultiPolygon> | SketchCo
       const data = await overlapFeatures(habitat, features, sketch);
       const area = data.reduce((acc, cur) => acc + cur.value, 0);
       results.subtidal.push({ habitat, area, fraction: area / totalArea });
+      subtidalHabitats.add(habitat);
     }
     url = `${project.dataBucketUrl()}intertidal-habitats.fgb`;
     features = (await fgbFetchAll(url, sketch.bbox || bbox(sketch))) as Feature<Polygon>[];
@@ -49,8 +52,32 @@ export async function habitats(sketch: Sketch<Polygon | MultiPolygon> | SketchCo
       const data = await overlapFeatures(habitat, features, sketch);
       const area = data.reduce((acc, cur) => acc + cur.value, 0);
       results.intertidal.push({ habitat, area, fraction: area / totalArea });
+      intertidalHabitats.add(habitat);
     }
   }
+  
+  // if a collection, there are multiple entries for each sketch. Sum them up.
+  results.subtidal = Array.from(subtidalHabitats).map((habitat) => {
+    const newRecord = {habitat, area: 0, fraction: 0};
+    for (const record of results.subtidal) {
+      if (record.habitat === habitat) {
+        newRecord.area += record.area;
+        newRecord.fraction += record.fraction;
+      }
+    }
+    return newRecord;
+  });
+  results.intertidal = Array.from(intertidalHabitats).map((habitat) => {
+    const newRecord = {habitat, area: 0, fraction: 0};
+    for (const record of results.intertidal) {
+      if (record.habitat === habitat) {
+        newRecord.area += record.area;
+        newRecord.fraction += record.fraction;
+      }
+    }
+    return newRecord;
+  });
+
   return results;
 }
 

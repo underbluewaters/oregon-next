@@ -5,6 +5,14 @@ table td {
   border-collapse: collapse;
 }
 
+.TableCardTable tbody td {
+  border: none;
+}
+
+.TableCardTable tbody tr {
+  border-top: 1px solid #e6e6e6;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -17,4 +25,88 @@ thead th, thead td {
 
 thead th:first-child, thead td:first-child {
   text-align: left;
+}
+
+tr.total td {
+  /* font-style: italic; */
+  font-weight: 500;
+  color: black !important;
+  /* background-color: #efefef; */
+}
+
+.TableCardTable tr.total {
+  background: #fcfcfc;
+}
+
+table tr td {
+  text-align: center;
+}
+
+table tr td:first-child {
+  text-align: left;
+}
+
+.TableCardTable thead {
+  background-color: rgb(249 250 251);
+}
+
+.TableCardTable thead tr td, .TableCardTable thead tr th {
+  padding: 10px 15px;
+  padding-top: 0px;
+  position: relative;
+  color: rgb(86, 91, 102);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.TableCardTable td {
+  padding: 0.75rem;
+  color: #555;
+}
+
+.TableCardTable tbody tr td:first-child {
+  padding-left: 1rem;
+}
+
+.TableCardTable tbody td:first-child, .TableCardTable tbody td:last-child {
+  border-left: none;
+  border-right: none;
+}
+
+p {
+  font-size: 15px;
+  margin: 4px 0px;
+}
+
+.TableCardTable > p {
+  font-size: 14;
+  padding: 12px 16px;
+  margin-bottom: 0;
+  background-color: rgb(249 250 251);
+  border-top: 1px solid #e6e6e6;
+  margin-top: 0;
+}
+
+.TableCardTable > p:first-child {
+  border-top: none;
+  margin: 0;
+  padding: 8px 16px;
+  padding-bottom: 16px;
+  color: rgb(86, 91, 102);
+  font-size: 15;
+}
+ 
+.TableCardTable > p > ul {
+  list-style: none;
+  text-indent: none;
+  padding: 0 1rem;
+}
+
+.TableCardTable > p > ul > li {
+  margin: 0.5rem 0;
+}
+
+.TableCardTable .parking td {
+  padding-left: 6px;
+  padding-right: 6px;
 }

@@ -22,8 +22,8 @@ export const SizeCard = () => {
         {(data: AreaResults) => (
           <p>
             📐
-            This sketch has an area of{" "}
-            <b>{Number.format(Math.round(data.area * 0.000247105))}</b>{" "}
+            This designated area is{" "}
+            <b>{Number.format(Math.round(data.area[0].area * 0.000247105))}</b>{" "}
             acres
           </p>
         )}
