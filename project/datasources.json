@@ -356,13 +356,13 @@
     "explodeMulti": false
   },
   {
-    "src": "data/src/BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED.fgb",
-    "layerName": "BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED",
-    "geo_type": "vector",
     "datasourceId": "kelp-full",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": false,
+    "layerName": "BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED",
     "classKeys": [
       "KELP90",
       "KELP96",
@@ -374,6 +374,7 @@
     ],
     "created": "2023-12-19T22:54:26.706Z",
     "lastUpdated": "2023-12-19T22:54:26.706Z",
+    "src": "data/src/BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED.fgb",
     "propertiesToKeep": [
       "KELP90",
       "KELP96",
@@ -382,6 +383,28 @@
       "KELP99",
       "KELP2010",
       "ACRESR"
+    ],
+    "explodeMulti": false
+  },
+  {
+    "src": "data/src/oregon-hab-subdivided.fgb",
+    "layerName": "output",
+    "geo_type": "vector",
+    "datasourceId": "substrate",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [],
+    "created": "2026-01-16T04:22:10.915Z",
+    "lastUpdated": "2026-01-16T04:22:10.915Z",
+    "propertiesToKeep": [
+      "MPA",
+      "MR",
+      "SPA",
+      "MCA",
+      "MG",
+      "MRA",
+      "CMECS_SC_C"
     ],
     "explodeMulti": false,
     "precalc": false
