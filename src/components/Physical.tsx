@@ -9,6 +9,7 @@ import { tableCardStyle, tableCardTitleStyle } from "./styles";
 import TableSkeleton from "./TableSkeleton";
 import ResultsTableCard from "./ResultsTableCard";
 import SeaLevelRiseRisk from "./SeaLevelRiseRisk";
+import CMECCard from "./CMEC";
 
 const NumberFormat = new Intl.NumberFormat("en-US", {
   style: "decimal",
@@ -45,9 +46,11 @@ export const PhysicalPage = () => {
           </>
         }}
       </ResultsCard>
+      <CMECCard />
       <ResultsCard title="Subtidal Substrate" functionName="habitats" style={tableCardStyle} titleStyle={tableCardTitleStyle} skeleton={<TableSkeleton rows={10} />}>
         {(data: HabitatsResults) => <SubstrateTable rows={data.subtidal} />}
       </ResultsCard>
+      
       <ResultsCard title="Intertidal Substrate" functionName="habitats" style={tableCardStyle} titleStyle={tableCardTitleStyle} skeleton={<TableSkeleton rows={10} />}>
         {(data: HabitatsResults) => <SubstrateTable rows={data.intertidal} />}
       </ResultsCard>

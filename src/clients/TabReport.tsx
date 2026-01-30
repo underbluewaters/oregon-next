@@ -9,7 +9,6 @@ require("./index.css");
 const TabReport = () => {
   const tabs = ["Geography", "Physical", "Biological", "Human Use"];
   const [tab, setTab] = useState<string>(tabs[0]);
-
   return (
     <>
       <div style={{ marginTop: 5 }}>

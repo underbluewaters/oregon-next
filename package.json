@@ -45,6 +45,7 @@
     "@seasketch/geoprocessing"
   ],
   "dependencies": {
+    "@seasketch/geostats-types": "^1.0.0",
     "@turf/area": "^6.5.0",
     "@turf/bbox": "^6.5.0",
     "@turf/bbox-clip": "^6.5.0",
@@ -62,13 +63,16 @@
     "@turf/meta": "^6.5.0",
     "@turf/polygon-to-line": "^6.5.0",
     "@turf/simplify": "^6.5.0",
+    "@types/mapbox-gl": "3.4",
     "@types/yargs": "^17.0.32",
     "execa": "^8.0.1",
     "flatbush": "^3.3.1",
     "i18next-browser-languagedetector": "^7.0.1",
     "inquirer": "^8.2.6",
+    "lru-cache": "^11.2.4",
     "react-i18next": "^12.2.0",
     "simple-statistics": "^7.8.3",
+    "undici": "^7.19.0",
     "union-subdivided-polygons": "^0.9.1",
     "yargs": "^17.7.2"
   },

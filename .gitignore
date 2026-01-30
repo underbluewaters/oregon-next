@@ -9,3 +9,4 @@ cdk-outputs.json
 !data/dist/README.md
 data/dist/kelp-full.fgb
 data/src/BIO_Modern_Kelp_Surveys_ODFW_90_96_97_98_99_2010_FIXED.fgb
+.env
